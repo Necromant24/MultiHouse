@@ -1,0 +1,18 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutMH";
+}
+
+<div>
+    <h2>
+        Admin auth
+    </h2>
+    
+    <form method="post" action="/Admin/Panel">
+        <input placeholder="password" name="password" />
+        <input type="submit" value="enter" />
+    </form>
+    
+</div>

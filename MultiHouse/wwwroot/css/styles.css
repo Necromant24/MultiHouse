@@ -1,0 +1,75 @@
+
+.head{
+    
+    display: grid;
+    
+    
+}
+
+.head-grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.testr{
+    background-color: red;
+}
+
+.testb{
+    background-color: blue;
+}
+
+.testg{
+    background-color: green;
+}
+
+.head-bg-color{
+    background-color: #8fd19e;
+}
+
+.site-bg-color{
+    background-color: #b1ae6c;
+}
+
+.head-flex{
+    display: flex;
+}
+
+
+.head-font{
+    font-size: large;
+    font-weight: bolder;
+    align-content: center;
+    text-align: center;
+}
+
+.right-block{
+    float: right;
+}
+
+
+.head-margin{
+    margin-left: 30%;
+    margin-top: 70px;
+}
+
+.head-left-margin{
+    margin-left: 40px;
+}
+
+
+.center-block{
+    margin-left: 10%;
+    background-color: red;
+    width: 80%;
+}
+
+.houses-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.house-card{
+    display: grid;
+    grid-template-rows: 40% 1fr;
+}

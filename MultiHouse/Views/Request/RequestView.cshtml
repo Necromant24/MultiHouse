@@ -1,0 +1,65 @@
+@model HouseRequest
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutAdminMH";
+}
+
+<div>
+    <h2>
+        House Request
+    </h2>
+    <div>
+        <h4>
+            <span style="color: greenyellow">
+                @Model.Status
+            </span>
+        </h4>
+        <div>
+            @Model.FirstName @Model.LastName @Model.Patronymic
+        </div>
+        <div>
+            номер телефона: @Model.Phone
+        </div>
+        <div>
+            Точный адрес: @Model.Address
+        </div>
+        <div>
+            желаемый адрес: @Model.AproximateAddress
+        </div>
+        <div>
+            Пожелания: @Model.Suggestions
+        </div>
+        <div>
+            Кол-во комнат: @Model.RoomCount
+        </div>
+        <div>
+            Покупка: @Model.IsBuying
+        </div>
+        <div>
+            Аренда: @Model.IsRenting
+        </div>
+
+
+
+    </div>
+    
+    <form method="post" action="/Request/EditStatus?id=@Model.Id">
+        <input list="statuses" name="status" />
+        <datalist id="statuses">
+            <option>
+                in progress
+            </option>
+            <option>
+                not checked
+            </option>
+            <option>
+                checked
+            </option>
+        </datalist>
+        
+        <input type="submit" value="change status" />
+        
+    </form>
+    
+</div>

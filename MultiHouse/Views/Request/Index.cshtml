@@ -1,0 +1,22 @@
+@model List<HouseRequest>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutAdminMH";
+}
+
+<div>
+    @foreach (var req in @Model)
+    {
+        <div>
+            <a href="/Request/RequestView/@req.Id">
+                <h4>
+                    @req.FirstName @req.LastName <span style="color: gray; "> @req.Status </span>
+                </h4>
+            </a>
+            
+        </div>
+
+    }
+
+</div>

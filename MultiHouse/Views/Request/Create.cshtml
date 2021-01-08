@@ -1,0 +1,48 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutMH";
+}
+
+<h2>Оставить заявку</h2>
+
+<div align="center">
+    
+    <div>
+        <form method="post" action="">
+            <div>
+                <input placeholder="Имя"/>
+                <input placeholder="Фамилия"/>
+                <input placeholder="Отчество"/>
+            </div>
+            <div>
+                <input placeholder="номер тел." type="number"/>
+            </div>
+            <div>
+                <input placeholder="Описание (доп. пожелания)"/>
+            </div>
+            <div>
+                <input placeholder="кол-во комнат" />
+            </div>
+            <div>
+                <input placeholder="район"/>
+            </div>
+            <div>
+                <input placeholder="точный адрес"/>
+            </div>
+            <div>
+                <input placeholder="аренда" type="checkbox"/>
+                <input placeholder="покупка" type="checkbox"/>
+            </div>
+            
+            
+            
+            
+
+            <input type="submit" value="отправить"/>
+
+        </form>
+    </div>
+    
+</div>

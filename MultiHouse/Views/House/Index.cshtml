@@ -1,0 +1,87 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutAdminMH";
+}
+
+<div>
+    <h3>
+        Add new House
+    </h3>
+    
+    <form method="post" action="/House/Create">
+        <input name="description" placeholder="description" />
+        <input name="RoomCount" type="number" placeholder="RoomCount"  />
+        <input name="Address" placeholder="Address"  />
+        Is Rent <input name="IsRenting" type="checkbox" />
+        Is Buy <input name="IsBuying" type="checkbox" />
+        <input name="MainImg" type="file" />
+        <input type="submit" value="create" />
+        
+    </form>
+    
+    
+    
+    <script type="text/javascript">
+    
+    
+    
+     function getFileData () {
+    
+                        imgContainer = document.getElementById('imgContainer');
+    
+    
+                        let finput = document.getElementById('file-input');
+                        finput.onchange = function (e) {
+    
+                            let f = e.target.files[0];
+    
+                            let img = new Image();
+    
+                            let reader = new FileReader();
+    
+                            img.onload = function (e) {
+                                
+                                reader.readAsArrayBuffer(f);
+                            }
+    
+                            img.src = URL.createObjectURL(f);
+    
+                            reader.onloadend = function (e) {
+    
+                                let buf = reader.result;
+                                let uintbuf = new Uint8Array(buf);
+    
+                                sendFile(uintbuf);
+                            }
+    
+                        }
+    
+                    }
+    
+     function sendFile(buffer) {
+    
+                        let url = "/api/Avatars";
+    
+                        let data = {
+                            Buffer: buffer.toString(),
+                            FileName: "some.jpg",
+                            UserId: "<%=User.UserId %>"
+                        };
+    
+                        fetch(url, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(data)
+                        }).then((data) => {
+                            console.log(data);
+                        });
+    
+    
+                    }
+    </script>
+    
+</div>
