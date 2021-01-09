@@ -30,6 +30,7 @@
         <e p="Models" t="Include">
           <e p="ErrorViewModel.cs" t="Include" />
           <e p="House.cs" t="Include" />
+          <e p="HouseImage.cs" t="Include" />
           <e p="HouseRequest.cs" t="Include" />
           <e p="HouseSearch.cs" t="Include" />
           <e p="HouseUpload.cs" t="Include" />

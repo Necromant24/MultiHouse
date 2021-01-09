@@ -10,5 +10,6 @@ namespace MultiHouse.Models
         public string IsBuying { get; set; }
         // заставка на иконке в списке на главной
         public string MainImg { get; set; }
+        
     }
 }

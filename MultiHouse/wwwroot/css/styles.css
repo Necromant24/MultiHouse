@@ -64,6 +64,13 @@
     width: 80%;
 }
 
+.about-block{
+    margin-left: 10%;
+    background-color: gray;
+    width: 80%;
+    min-height: 500px;
+}
+
 .houses-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -72,4 +79,11 @@
 .house-card{
     display: grid;
     grid-template-rows: 40% 1fr;
+}
+
+
+.serach-block{
+    margin-left: 10%;
+    background-color: gray;
+    width: 80%;
 }
