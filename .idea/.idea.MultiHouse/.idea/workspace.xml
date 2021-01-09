@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Database/DBHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Database/MHContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/House.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/HouseSearch.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/RequestView.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/img/logoMH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/img/logoza.ru.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Database/ImgPostfix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +23,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Immediate Window" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1B2/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/2C2/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1D0/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26B86A96-43D2-417A-8D83-30B1F2C4A06D/0/MediaTypeNames.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1D5/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -69,12 +59,15 @@
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/RequestView.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Database/ImgPostfix.txt" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" />
     </changedPaths>
   </component>
@@ -92,6 +85,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MultiHouse">
@@ -138,7 +132,8 @@
       <workItem from="1609954355874" duration="2988000" />
       <workItem from="1609967688037" duration="1452000" />
       <workItem from="1610056710375" duration="4274000" />
-      <workItem from="1610118939619" duration="15660000" />
+      <workItem from="1610118939619" duration="17935000" />
+      <workItem from="1610152495581" duration="1946000" />
     </task>
     <servers />
   </component>
@@ -167,29 +162,81 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs</url>
-          <line>32</line>
+          <line>47</line>
           <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\HouseController.cs" initialLine="25" containingFunctionPresentation="method 'Create'">
             <startOffsets>
-              <option value="675" />
+              <option value="1186" />
             </startOffsets>
             <endOffsets>
-              <option value="698" />
+              <option value="1209" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs</url>
-          <line>31</line>
+          <line>46</line>
           <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\HouseController.cs" initialLine="24" containingFunctionPresentation="method 'Create'">
             <startOffsets>
-              <option value="635" />
+              <option value="1146" />
             </startOffsets>
             <endOffsets>
-              <option value="662" />
+              <option value="1173" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs</url>
+          <line>86</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\HouseController.cs" initialLine="66" containingFunctionPresentation="method 'HouseUpload'">
+            <startOffsets>
+              <option value="2093" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2116" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs</url>
+          <line>69</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\HouseController.cs" initialLine="53" containingFunctionPresentation="method 'HouseUpload'">
+            <startOffsets>
+              <option value="1599" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1616" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs</url>
+          <line>72</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\HouseController.cs" initialLine="56" containingFunctionPresentation="method 'HouseUpload'">
+            <startOffsets>
+              <option value="1720" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1760" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs</url>
+          <line>93</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\HouseController.cs" initialLine="74" containingFunctionPresentation="method 'HouseUpload'">
+            <startOffsets>
+              <option value="2276" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2299" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

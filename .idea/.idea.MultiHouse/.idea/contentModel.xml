@@ -3,6 +3,7 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Necromant\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Necromant\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_MultiHouse.1035090684.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Necromant\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Necromant\RiderProjects\MultiHouse" t="IncludeFlat">
       <e p="MultiHouse" t="IncludeRecursive">
         <e p="appsettings.Development.json" t="Include" />
@@ -18,7 +19,11 @@
         </e>
         <e p="Database" t="Include">
           <e p="DBHelper.cs" t="Include" />
+          <e p="ImgPostfix.txt" t="Include" />
           <e p="MHContext.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="DataHelper.cs" t="Include" />
         </e>
         <e p="mh.db" t="Include" />
         <e p="Models" t="Include">
@@ -26,6 +31,7 @@
           <e p="House.cs" t="Include" />
           <e p="HouseRequest.cs" t="Include" />
           <e p="HouseSearch.cs" t="Include" />
+          <e p="HouseUpload.cs" t="Include" />
         </e>
         <e p="MultiHouse.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -90,6 +96,10 @@
               <e p="h4.jpg" t="Include" />
               <e p="h5.png" t="Include" />
               <e p="h6.jpg" t="Include" />
+              <e p="house0.jpg" t="Include" />
+              <e p="house1.jpg" t="Include" />
+              <e p="house2.jpg" t="Include" />
+              <e p="some1.jpg" t="Include" />
             </e>
             <e p="imgssome" t="Include">
               <e p="-FilesZ500-res-wizualizacje-Z13-Z13_view1_jpg.jpg" t="Include" />
