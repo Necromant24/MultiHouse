@@ -16,35 +16,30 @@ namespace MultiHouse.Controllers
         }
 
 
-        public IActionResult Index(string? id, [FromForm]HouseSearch search)
+        public IActionResult Index([FromForm]HouseSearch houseSearch)
         {
             var houses = _context.Houses.Select(x => x);
             
-            if (id != null && id != "")
+
+            if (houseSearch.Search != null)
             {
-                houses = houses.Where(x => x.Address.Contains(id) ||
-                                           x.Description.Contains(id));
+                houses = houses.Where(x => x.Address.Contains(houseSearch.Search) ||
+                                           x.Description.Contains(houseSearch.Search));
             }
 
-            if (search.Search != null)
+            if (houseSearch.RoomCount != null && houseSearch.RoomCount!=0)
             {
-                houses = houses.Where(x => x.Address.Contains(search.Search) ||
-                                           x.Description.Contains(search.Search));
+                houses = houses.Where(x => x.RoomCount == houseSearch.RoomCount);
             }
 
-            if (search.RoomCount != null)
+            if (houseSearch.IsBuying != null)
             {
-                houses = houses.Where(x => x.RoomCount == search.RoomCount);
+                houses = houses.Where(x => x.IsBuying == houseSearch.IsBuying);
             }
 
-            if (search.IsBuying != null)
+            if (houseSearch.IsRenting != null)
             {
-                houses = houses.Where(x => x.IsBuying == search.IsBuying);
-            }
-
-            if (search.IsRenting != null)
-            {
-                houses = houses.Where(x => x.IsRenting == search.IsRenting);
+                houses = houses.Where(x => x.IsRenting == houseSearch.IsRenting);
             }
             
             return View(houses.ToList());

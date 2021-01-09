@@ -41,6 +41,16 @@ namespace MultiHouse.Controllers
 
             return View("RequestView", hr);
         }
+
+        public IActionResult Create([FromForm]HouseRequest houseRequest)
+        {
+
+
+            _context.HousesRequests.Add(houseRequest);
+            _context.SaveChanges();
+            
+            return View();
+        }
         
     }
 }

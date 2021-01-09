@@ -12,28 +12,31 @@
     <div>
         <form method="post" action="">
             <div>
-                <input placeholder="Имя"/>
-                <input placeholder="Фамилия"/>
-                <input placeholder="Отчество"/>
+                <input placeholder="Имя" name="FirstName" />
+                <input placeholder="Фамилия" name="LastName" />
+                <input placeholder="Отчество" name="Patronymic" />
             </div>
             <div>
-                <input placeholder="номер тел." type="number"/>
+                <input name="Phone" placeholder="номер тел." type="number"/>
             </div>
             <div>
-                <input placeholder="Описание (доп. пожелания)"/>
+                <input name="Suggestions" placeholder="Описание (доп. пожелания)"/>
             </div>
             <div>
-                <input placeholder="кол-во комнат" />
+                <input name="RoomCount" placeholder="кол-во комнат" />
             </div>
             <div>
-                <input placeholder="район"/>
+                <input name="AproximateAddress" placeholder="район"/>
             </div>
             <div>
-                <input placeholder="точный адрес"/>
+                <input name="Address" placeholder="точный адрес"/>
             </div>
             <div>
-                <input placeholder="аренда" type="checkbox"/>
-                <input placeholder="покупка" type="checkbox"/>
+                Rent:<input name="IsRenting" placeholder="аренда" type="checkbox"/>
+                
+            </div>
+            <div>
+                Buy:<input name="IsBuying" placeholder="покупка" type="checkbox"/>
             </div>
             
             

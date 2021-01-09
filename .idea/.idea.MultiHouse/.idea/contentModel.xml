@@ -6,6 +6,7 @@
     <e p="C:\Users\Necromant\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
     <e p="C:\Users\Necromant\RiderProjects\MultiHouse" t="IncludeFlat">
       <e p="MultiHouse" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
