@@ -23,6 +23,8 @@
 
     <ItemGroup>
       <Folder Include="Pages" />
+      <Folder Include="wwwroot\img\houses\imgs" />
+      <Folder Include="wwwroot\img\houses\mainImg" />
     </ItemGroup>
 	
 	

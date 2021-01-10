@@ -21,6 +21,7 @@
         <e p="Database" t="Include">
           <e p="DBHelper.cs" t="Include" />
           <e p="ImgPostfix.txt" t="Include" />
+          <e p="MainImgPostfix.txt" t="Include" />
           <e p="MHContext.cs" t="Include" />
         </e>
         <e p="Helpers" t="Include">
@@ -101,6 +102,8 @@
               <e p="house0.jpg" t="Include" />
               <e p="house1.jpg" t="Include" />
               <e p="house2.jpg" t="Include" />
+              <e p="imgs" t="Include" />
+              <e p="mainImg" t="Include" />
               <e p="some1.jpg" t="Include" />
             </e>
             <e p="imgssome" t="Include">

@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MultiHouse.Database;
 using MultiHouse.Helpers;
@@ -15,11 +16,20 @@ namespace MultiHouse.Controllers
     {
         private readonly MHContext _context;
         
-        string filePath = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/ImgPostfix.txt";
+        string filePath = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/MainImgPostfix.txt";
+
+        string filePath2 = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/ImgPostfix.txt";
 
 
+        public static int? mainImgPostfix = null;
         public static int? imgPostfix = null;
 
+        
+        static string mainImgSaveDir = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/wwwroot/img/houses/";
+        static string ImgsSaveDir = mainImgSaveDir+"imgs/";
+        
+        
+        
         public HouseController(MHContext context)
         {
             _context = context;
@@ -30,6 +40,14 @@ namespace MultiHouse.Controllers
                 int postfix = Convert.ToInt32(data);
                 imgPostfix = postfix;
             }
+            
+            if (mainImgPostfix == null)
+            {
+                string data = System.IO.File.ReadAllText(filePath2);
+                int postfix = Convert.ToInt32(data);
+                mainImgPostfix = postfix;
+            }
+            
             
         }
 
@@ -67,14 +85,47 @@ namespace MultiHouse.Controllers
         public string HouseUpload([FromForm]HouseUpload houseUpload)
         {
 
-            var projectDir = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/wwwroot/img/houses/";
 
+            var fileName ="house"+mainImgPostfix+".jpg";
             
-            var fileName ="house"+imgPostfix+".jpg";
+            SaveWebImage(houseUpload.MainImg,fileName);
 
-            var fullFileName = projectDir + fileName;
+            House house = DataHelper.HUploadToHouse(houseUpload);
 
-            var fs = houseUpload.MainImg.OpenReadStream();
+            house.MainImg = fileName;
+
+            foreach (var houseImg in houseUpload.Images)
+            {
+                var imgName = "h" + imgPostfix + ".jpg";
+                SaveWebImage(houseImg,imgName);
+                house.Images.Add(new HouseImage(){Name = imgName});
+                imgPostfix++;
+            }
+
+
+            _context.Houses.Add(house);
+            _context.SaveChanges();
+
+            ++imgPostfix;
+            
+            System.IO.File.WriteAllText(filePath,mainImgPostfix.ToString());
+            System.IO.File.WriteAllText(ImgsSaveDir+"ImgPostfix.txt",imgPostfix.ToString());
+            
+            return "ok";
+        }
+
+
+
+        public void SaveWebImage(IFormFile file, string name, bool isMain = false)
+        {
+            var savePath = mainImgSaveDir;
+            if (isMain)
+            {
+                savePath = ImgsSaveDir;
+            }
+            
+            
+            var fs = file.OpenReadStream();
 
             IImageDecoder decoder = new JpegDecoder();
 
@@ -84,21 +135,7 @@ namespace MultiHouse.Controllers
             
             img.Mutate(x => x.Resize(252, 138));
             
-            img.Save(fullFileName);
-
-            House house = DataHelper.HUploadToHouse(houseUpload);
-
-            house.MainImg = fileName;
-
-            _context.Houses.Add(house);
-            _context.SaveChanges();
-
-            ++imgPostfix;
-            
-            System.IO.File.WriteAllText(filePath,imgPostfix.ToString());
-            
-            
-            return "ok";
+            img.Save(savePath+name);
         }
         
         

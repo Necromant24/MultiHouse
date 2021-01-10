@@ -8,6 +8,7 @@ namespace MultiHouse.Database
 
         public DbSet<House> Houses { get; set; }
         public DbSet<HouseRequest> HousesRequests { get; set; }
+        public DbSet<HouseImage> HouseImages { get; set; }
         
         public MHContext(DbContextOptions<MHContext> options) : base(options)
         {
