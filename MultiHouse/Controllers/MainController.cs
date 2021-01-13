@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MultiHouse.Database;
 using MultiHouse.Models;
 
@@ -18,7 +19,7 @@ namespace MultiHouse.Controllers
 
         public IActionResult Index([FromForm]HouseSearch houseSearch)
         {
-            var houses = _context.Houses.Select(x => x);
+            var houses = _context.Houses2.Select(x => x);
             
 
             if (houseSearch.Search != null)
@@ -48,8 +49,10 @@ namespace MultiHouse.Controllers
 
         public IActionResult House(int id)
         {
-            var house = _context.Houses.First(x => x.Id == id);
-
+            var house = _context.Houses2
+                .Include(x => x.Images)
+                .First(x => x.Id == id);
+            
             return View(house);
         }
 

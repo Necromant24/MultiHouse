@@ -1,8 +1,10 @@
-@model dynamic
+@model HouseRequest
 
 @{
     ViewBag.Title = "title";
     Layout = "_LayoutMH";
+    
+    
 }
 
 <h2>Оставить заявку</h2>
@@ -10,7 +12,7 @@
 <div align="center">
     
     <div>
-        <form method="post" action="">
+        <form method="post" action="/Request/Create">
             <div>
                 <input placeholder="Имя" name="FirstName" />
                 <input placeholder="Фамилия" name="LastName" />
@@ -23,13 +25,13 @@
                 <input name="Suggestions" placeholder="Описание (доп. пожелания)"/>
             </div>
             <div>
-                <input name="RoomCount" placeholder="кол-во комнат" />
+                <input value="@Model.RoomCount" name="RoomCount" placeholder="кол-во комнат" />
             </div>
             <div>
                 <input name="AproximateAddress" placeholder="район"/>
             </div>
             <div>
-                <input name="Address" placeholder="точный адрес"/>
+                <input value="@Model.Address" name="Address" placeholder="точный адрес"/>
             </div>
             <div>
                 Rent:<input name="IsRenting" placeholder="аренда" type="checkbox"/>
@@ -39,7 +41,7 @@
                 Buy:<input name="IsBuying" placeholder="покупка" type="checkbox"/>
             </div>
             
-            
+            <input type="hidden" value="@Model.HouseId" name="houseId" />
             
             
 

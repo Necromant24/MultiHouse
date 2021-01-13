@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -17,7 +20,7 @@ namespace MultiHouse
         {
             var host = CreateHostBuilder(args).Build();
             
-            //CreateDbIfNotExists(host);
+            CreateDbIfNotExists(host);
             
             host.Run();
         }
@@ -34,7 +37,27 @@ namespace MultiHouse
                 var services = scope.ServiceProvider;
                 
                     var context = services.GetRequiredService<MHContext>();
-                    DBHelper.InsertTestData(context);
+                    
+                    
+                    
+                    //context.Database.Migrate();
+
+                    //context.SaveChanges();
+
+                    bool connected = context.Database.CanConnect();
+                    bool created = context.Database.EnsureCreated();
+                    
+
+                    if (false)
+                    {
+                        RelationalDatabaseCreator databaseCreator =
+                            (RelationalDatabaseCreator)context.Database.GetService<IDatabaseCreator>();
+                        databaseCreator.CreateTables();
+                    }
+                    
+                    
+                    
+                    //DBHelper.InsertTestData(context);
                 
             }
         }

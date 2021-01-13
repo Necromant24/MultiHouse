@@ -1,3 +1,6 @@
+using System.Net;
+using Microsoft.AspNetCore.Http;
+using MultiHouse.Controllers;
 using MultiHouse.Models;
 
 namespace MultiHouse.Helpers
@@ -17,6 +20,12 @@ namespace MultiHouse.Helpers
                 MainImg = houseUpload.MainImg.Name,
                 RoomCount = houseUpload.RoomCount
             };
+        }
+
+
+        public static bool IsAdminAuthorized(HttpContext ctx)
+        {
+            return ctx.Request.Cookies["auth_token"] == AdminController.AuthToken;
         }
         
     }

@@ -23,8 +23,15 @@
 
     <ItemGroup>
       <Folder Include="Pages" />
-      <Folder Include="wwwroot\img\houses\imgs" />
-      <Folder Include="wwwroot\img\houses\mainImg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\-FilesZ500-res-wizualizacje-Z13-Z13_view1_jpg.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\102-b.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\43722ce8f9f3d043bd1fdb9a93436e3b.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\450476b7618698f51a4849bb2fd510d8.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\d798f3a72cca1a5dbcb48a8462203422.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\fdfd67803eaafe3a4e6e49706efe02a4.jpg" />
     </ItemGroup>
 	
 	

@@ -87,32 +87,27 @@
         </e>
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
+            <e p="carousel.css" t="Include" />
             <e p="site.css" t="Include" />
             <e p="styles.css" t="Include" />
           </e>
           <e p="favicon.ico" t="Include" />
           <e p="img" t="Include">
             <e p="houses" t="Include">
-              <e p="h1.jpg" t="Include" />
-              <e p="h2.jpg" t="Include" />
-              <e p="h3.jpg" t="Include" />
-              <e p="h4.jpg" t="Include" />
-              <e p="h5.png" t="Include" />
-              <e p="h6.jpg" t="Include" />
-              <e p="house0.jpg" t="Include" />
-              <e p="house1.jpg" t="Include" />
-              <e p="house2.jpg" t="Include" />
-              <e p="imgs" t="Include" />
-              <e p="mainImg" t="Include" />
-              <e p="some1.jpg" t="Include" />
-            </e>
-            <e p="imgssome" t="Include">
-              <e p="-FilesZ500-res-wizualizacje-Z13-Z13_view1_jpg.jpg" t="Include" />
-              <e p="102-b.jpg" t="Include" />
-              <e p="43722ce8f9f3d043bd1fdb9a93436e3b.jpg" t="Include" />
-              <e p="450476b7618698f51a4849bb2fd510d8.jpg" t="Include" />
-              <e p="d798f3a72cca1a5dbcb48a8462203422.png" t="Include" />
-              <e p="fdfd67803eaafe3a4e6e49706efe02a4.jpg" t="Include" />
+              <e p="imgs" t="Include">
+                <e p="h0.jpg" t="Include" />
+                <e p="h1.jpg" t="Include" />
+                <e p="h2.jpg" t="Include" />
+              </e>
+              <e p="mainImg" t="Include">
+                <e p="h0.jpg" t="Include" />
+                <e p="h1.jpg" t="Include" />
+                <e p="h2.jpg" t="Include" />
+                <e p="h3.jpg" t="Include" />
+                <e p="h4.jpg" t="Include" />
+                <e p="h5.jpg" t="Include" />
+                <e p="h6.jpg" t="Include" />
+              </e>
             </e>
             <e p="logoMH.png" t="Include" />
             <e p="logoza.ru.png" t="Include" />

@@ -6,28 +6,27 @@ namespace MultiHouse.Database
 {
     public static class DBHelper
     {
-        
-        
-        
-        
+
         public static void InsertTestData(MHContext dc)
         {
+            dc.Database.Migrate();
+            
 
             bool created = dc.Database.EnsureCreated();
-
-            bool connectable = dc.Database.CanConnect();
             
-            dc.Database.Migrate();
-        
-            InsertTestHouses(dc);
-            InsertTestHouseRequests(dc);
+            if (!created)
+            {
+                InsertTestHouses(dc);
+                InsertTestHouseRequests(dc);  
+            }
+            
         }
         
         public static void InsertTestHouses(MHContext dc)
         {
             
                 
-                dc.Houses.AddRange(new List<House>()
+                dc.Houses2.AddRange(new List<House>()
                 {
                     new ()
                     {

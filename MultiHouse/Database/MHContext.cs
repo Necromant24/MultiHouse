@@ -6,7 +6,7 @@ namespace MultiHouse.Database
     public class MHContext : DbContext
     {
 
-        public DbSet<House> Houses { get; set; }
+        public DbSet<House> Houses2 { get; set; }
         public DbSet<HouseRequest> HousesRequests { get; set; }
         public DbSet<HouseImage> HouseImages { get; set; }
         

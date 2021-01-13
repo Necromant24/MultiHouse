@@ -1,3 +1,5 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace MultiHouse.Models
 {
     public class HouseRequest
@@ -21,6 +23,8 @@ namespace MultiHouse.Models
 
         // not checked || checked || in progress
         public string Status { get; set; } = "not checked";
+        [AllowNull]
+        public int? HouseId { get; set; }
 
 
     }

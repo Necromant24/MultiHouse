@@ -45,11 +45,29 @@ namespace MultiHouse.Controllers
         public IActionResult Create([FromForm]HouseRequest houseRequest)
         {
 
-
+            
             _context.HousesRequests.Add(houseRequest);
             _context.SaveChanges();
             
-            return View();
+            return View(new HouseRequest());
+        }
+        
+        public IActionResult CreateView(int? id)
+        {
+            var houseRequest = new HouseRequest();
+            if (id != null)
+            {
+                var house = _context.Houses2.First(x => x.Id == id);
+
+                houseRequest = new HouseRequest()
+                {
+                    Address = house.Address,
+                    RoomCount = house.RoomCount,
+                    HouseId = house.Id
+                };
+            }
+            
+            return View("Create", houseRequest);
         }
         
     }

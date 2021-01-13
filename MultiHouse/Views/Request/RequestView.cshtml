@@ -9,6 +9,16 @@
     <h2>
         House Request
     </h2>
+    
+    <h3>
+        @if (@Model.HouseId!=null && @Model.HouseId!=0)
+        {
+            <a href="/Main/House/@Model.HouseId">
+                перейти к обьявлению
+            </a>
+        }
+    </h3>
+    
     <div>
         <h4>
             <span style="color: greenyellow">

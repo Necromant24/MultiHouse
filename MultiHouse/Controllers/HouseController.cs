@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -62,7 +63,7 @@ namespace MultiHouse.Controllers
             
             //TODO: разобраться с картинками
 
-            _context.Houses.Add(house);
+            _context.Houses2.Add(house);
             _context.SaveChanges();
 
             return "ok";
@@ -70,8 +71,8 @@ namespace MultiHouse.Controllers
 
         public string Delete(int id)
         {
-            var house = _context.Houses.First(x => x.Id == id);
-            _context.Houses.Remove(house);
+            var house = _context.Houses2.First(x => x.Id == id);
+            _context.Houses2.Remove(house);
 
             _context.SaveChanges();
             
@@ -85,6 +86,8 @@ namespace MultiHouse.Controllers
         public string HouseUpload([FromForm]HouseUpload houseUpload)
         {
 
+            string imgPostfixFile = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/ImgPostfix.txt";
+            string mainImgPostfixFile = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/MainImgPostfix.txt";
 
             var fileName ="house"+mainImgPostfix+".jpg";
             
@@ -93,6 +96,11 @@ namespace MultiHouse.Controllers
             House house = DataHelper.HUploadToHouse(houseUpload);
 
             house.MainImg = fileName;
+
+            if (house.Images == null)
+            {
+                house.Images = new List<HouseImage>();
+            }
 
             foreach (var houseImg in houseUpload.Images)
             {
@@ -103,13 +111,13 @@ namespace MultiHouse.Controllers
             }
 
 
-            _context.Houses.Add(house);
+            _context.Houses2.Add(house);
             _context.SaveChanges();
 
             ++imgPostfix;
             
-            System.IO.File.WriteAllText(filePath,mainImgPostfix.ToString());
-            System.IO.File.WriteAllText(ImgsSaveDir+"ImgPostfix.txt",imgPostfix.ToString());
+            System.IO.File.WriteAllText(mainImgPostfixFile,mainImgPostfix.ToString());
+            System.IO.File.WriteAllText(imgPostfixFile,imgPostfix.ToString());
             
             return "ok";
         }
@@ -118,10 +126,15 @@ namespace MultiHouse.Controllers
 
         public void SaveWebImage(IFormFile file, string name, bool isMain = false)
         {
-            var savePath = mainImgSaveDir;
+            var housesPath = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/wwwroot/img/houses/";
+            var savePath = ImgsSaveDir;
             if (isMain)
             {
-                savePath = ImgsSaveDir;
+                savePath += "mainImg/";
+            }
+            else
+            {
+                savePath += "imgs/";
             }
             
             
@@ -135,7 +148,7 @@ namespace MultiHouse.Controllers
             
             img.Mutate(x => x.Resize(252, 138));
             
-            img.Save(savePath+name);
+            img.Save(savePath);
         }
         
         
