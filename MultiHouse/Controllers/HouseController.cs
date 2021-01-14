@@ -91,7 +91,7 @@ namespace MultiHouse.Controllers
 
             var fileName ="house"+mainImgPostfix+".jpg";
             
-            SaveWebImage(houseUpload.MainImg,fileName);
+            SaveWebImage(houseUpload.MainImg,fileName,true);
 
             House house = DataHelper.HUploadToHouse(houseUpload);
 
@@ -114,7 +114,7 @@ namespace MultiHouse.Controllers
             _context.Houses2.Add(house);
             _context.SaveChanges();
 
-            ++imgPostfix;
+            ++mainImgPostfix;
             
             System.IO.File.WriteAllText(mainImgPostfixFile,mainImgPostfix.ToString());
             System.IO.File.WriteAllText(imgPostfixFile,imgPostfix.ToString());
@@ -126,8 +126,7 @@ namespace MultiHouse.Controllers
 
         public void SaveWebImage(IFormFile file, string name, bool isMain = false)
         {
-            var housesPath = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/wwwroot/img/houses/";
-            var savePath = ImgsSaveDir;
+            var savePath = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/wwwroot/img/houses/";
             if (isMain)
             {
                 savePath += "mainImg/";
@@ -136,7 +135,6 @@ namespace MultiHouse.Controllers
             {
                 savePath += "imgs/";
             }
-            
             
             var fs = file.OpenReadStream();
 
@@ -148,7 +146,7 @@ namespace MultiHouse.Controllers
             
             img.Mutate(x => x.Resize(252, 138));
             
-            img.Save(savePath);
+            img.Save(savePath+name);
         }
         
         
