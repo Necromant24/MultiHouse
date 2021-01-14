@@ -7,23 +7,38 @@
 
 
 <div>
-    <h2>Home page</h2>
-
-    <div class="center-block">
-        center text
+    <div class="serach-block">
         <div>
             <form  action="/Main" method="post">
-                <input type="text" name="Search" />
-                <br>
-                IsRenting <input type="checkbox" name="IsRenting" />
-                <br>
-                IsBuying <input type="checkbox" name="IsBuying" />
-                <br>
-                RoomCount <input type="number" name="RoomCount" />
-                <input type="submit" value="search" />
+                <div class="input-group mb-3">
+                    <input type="submit" value="search" class="btn btn-success" />
+                    <input type="text" name="Search" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                
+                <table>
+                    <tr>
+                        <td>
+                            IsRenting 
+                        </td>
+                        <td>
+                            <input name="IsRenting" type="checkbox">
+                        </td>
+                        <td>
+                            IsBuying                         
+                        </td>
+                        <td>
+                            <input name="IsBuying" type="checkbox">
+                        </td>
+                        
+                    </tr>
+                </table>
+                RoomCount <input type="number" name="RoomCount" placeholder="RoomCount" />
+                
             </form>
         </div>
     </div>    
+    <hr></hr>
+    <br>
     <div class="houses-grid">
         @foreach (var house in Model)
         {

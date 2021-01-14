@@ -13,19 +13,30 @@
     
     <div>
         <form method="post" action="/Request/Create">
-            <div>
-                <input placeholder="Имя" name="FirstName" />
-                <input placeholder="Фамилия" name="LastName" />
-                <input placeholder="Отчество" name="Patronymic" />
+            @* <div> *@
+            @*     <input placeholder="Имя" name="FirstName" /> *@
+            @*     <input placeholder="Фамилия" name="LastName" /> *@
+            @*     <input placeholder="Отчество" name="Patronymic" /> *@
+            @* </div> *@
+            
+            <div class="input-group">
+              <input placeholder="Имя" name="FirstName" class="form-control" />
+              <input placeholder="Фамилия" name="LastName" class="form-control" />
+              <input placeholder="Отчество" name="Patronymic" class="form-control" />
             </div>
+            
+            
             <div>
                 <input name="Phone" placeholder="номер тел." type="number"/>
             </div>
-            <div>
-                <input name="Suggestions" placeholder="Описание (доп. пожелания)"/>
+            @* <div> *@
+            @*     <input name="Suggestions" placeholder="Описание (доп. пожелания)"/> *@
+            @* </div> *@
+            <div class="input-group">
+              <textarea name="Suggestions" class="form-control" placeholder="Описание (доп. пожелания)" aria-label="With textarea"></textarea>
             </div>
             <div>
-                <input value="@Model.RoomCount" name="RoomCount" placeholder="кол-во комнат" />
+                <input value="@Model.RoomCount" name="RoomCount" type="number" placeholder="кол-во комнат" />
             </div>
             <div>
                 <input name="AproximateAddress" placeholder="район"/>

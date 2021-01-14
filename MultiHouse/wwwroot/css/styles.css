@@ -76,6 +76,13 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@media all and  (max-width: 800px) {
+    .houses-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .house-card{
     display: grid;
     grid-template-rows: 40% 1fr;
@@ -84,14 +91,13 @@
 
 
 .serach-block{
-    margin-left: 10%;
-    background-color: gray;
-    width: 80%;
+    margin-top: 20px;
+    width: 600px;
 }
 
 
 .carousel-container{
-    margin-left: 20%;
+    margin-left: 20px;
     width: 459px;
     height: 338px;
 }
