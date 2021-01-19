@@ -12,94 +12,113 @@
 <div>
     
     <div>
-        <form method="post" action="/Request/Create" id="hrequest-form">
-            @* <div> *@
-            @*     <input placeholder="Имя" name="FirstName" /> *@
-            @*     <input placeholder="Фамилия" name="LastName" /> *@
-            @*     <input placeholder="Отчество" name="Patronymic" /> *@
-            @* </div> *@
-            
-            <div class="input-group">
-                <input placeholder="Имя" name="FirstName" class="form-control" />
-                <input placeholder="Фамилия" name="LastName" class="form-control" />
-                <input placeholder="Отчество" name="Patronymic" class="form-control" />
-            </div>
-            
-            
-            <div>
-                <input name="Phone" placeholder="номер тел." />
-            </div>
-            @* <div> *@
-            @*     <input name="Suggestions" placeholder="Описание (доп. пожелания)"/> *@
-            @* </div> *@
-            
-            <div>
-                <input value="@Model.RoomCount" name="RoomCount" type="number" placeholder="кол-во комнат" />
-            </div>
-            
-            <div>
-                <input name="AproximateAddress" placeholder="район"/>
-            </div>
-            
-            <div>
-                <input value="@Model.Address" name="Address" placeholder="точный адрес"/>
-            </div>
-            
-            <div>
-                Rent:<input name="IsRenting" placeholder="аренда" type="checkbox"/>
-                            
-            </div>
-            
-            <div>
-                Buy:<input name="IsBuying" placeholder="покупка" type="checkbox"/>
-            </div>
-            
-
-            <div class="input-group">
-                <textarea name="Suggestions" class="form-control" placeholder="Описание (доп. пожелания)" aria-label="With textarea"></textarea>
-            </div>
-            
-            
-            <input type="hidden" value="@Model.HouseId" name="houseId" />
-            
-            
-
-            <input type="submit" value="отправить" class="btn btn-success" />
-
-        </form>
+        @* <form method="post" action="/Request/Create" id="hrequest-form"> *@
+        @*     $1$ <div> #1# *@
+        @*     $1$     <input placeholder="Имя" name="FirstName" /> #1# *@
+        @*     $1$     <input placeholder="Фамилия" name="LastName" /> #1# *@
+        @*     $1$     <input placeholder="Отчество" name="Patronymic" /> #1# *@
+        @*     $1$ </div> #1# *@
+        @*      *@
+        @*     <div class="input-group"> *@
+        @*         <input placeholder="Имя" name="FirstName" class="form-control" /> *@
+        @*         <input placeholder="Фамилия" name="LastName" class="form-control" /> *@
+        @*         <input placeholder="Отчество" name="Patronymic" class="form-control" /> *@
+        @*     </div> *@
+        @*      *@
+        @*      *@
+        @*     <div> *@
+        @*         <input name="Phone" placeholder="номер тел." /> *@
+        @*     </div> *@
+        @*     $1$ <div> #1# *@
+        @*     $1$     <input name="Suggestions" placeholder="Описание (доп. пожелания)"/> #1# *@
+        @*     $1$ </div> #1# *@
+        @*      *@
+        @*     <div> *@
+        @*         <input value="@Model.RoomCount" name="RoomCount" type="number" placeholder="кол-во комнат" /> *@
+        @*     </div> *@
+        @*      *@
+        @*     <div> *@
+        @*         <input name="AproximateAddress" placeholder="район"/> *@
+        @*     </div> *@
+        @*      *@
+        @*     <div> *@
+        @*         <input value="@Model.Address" name="Address" placeholder="точный адрес"/> *@
+        @*     </div> *@
+        @*      *@
+        @*     <div> *@
+        @*         Rent:<input name="IsRenting" placeholder="аренда" type="checkbox"/> *@
+        @*                      *@
+        @*     </div> *@
+        @*      *@
+        @*     <div> *@
+        @*         Buy:<input name="IsBuying" placeholder="покупка" type="checkbox"/> *@
+        @*     </div> *@
+        @*      *@
+        @* *@
+        @*     <div class="input-group"> *@
+        @*         <textarea name="Suggestions" class="form-control" placeholder="Описание (доп. пожелания)" aria-label="With textarea"></textarea> *@
+        @*     </div> *@
+        @*      *@
+        @*      *@
+        @*     <input type="hidden" value="@Model.HouseId" name="houseId" /> *@
+        @*      *@
+        @*      *@
+        @* *@
+        @*     <input type="submit" value="отправить" class="btn btn-success" /> *@
+        @* *@
+        @* </form> *@
         
         
         <div class="col-md-7 col-lg-8">
                 <h4 class="mb-3">Billing address</h4>
-                <form class="needs-validation" novalidate="">
+                <form method="post" action="/Request/Create"  class="needs-validation" novalidate="">
                   <div class="row g-3">
+                    
                     <div class="col-sm-6">
                       <label for="firstName" class="form-label">First name</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                      <input name="FirstName" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                       <div class="invalid-feedback">
                         Valid first name is required.
                       </div>
                     </div>
-        
+
                     <div class="col-sm-6">
                       <label for="lastName" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                      <input name="LastName" type="text" class="form-control" id="lastName" placeholder="" value="" required="">
                       <div class="invalid-feedback">
                         Valid last name is required.
                       </div>
                     </div>
                     
-                    
-                    <div class="col-12">
-                      <label for="firstName" class="form-label">Patronymic</label>
-                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label">Отчество</label>
+                      <input name="Patronymic" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
                       <div class="invalid-feedback">
                         Valid first name is required.
                       </div>
                     </div>
                     
                     
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">номер телефона</label>
+                      <input name="Phone" type="text" class="form-control" id="lastName" placeholder="8 800 555 35 35" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid last name is required.
+                      </div>
+                    </div>
                     
+
+
+                    <div class="col-12">
+                      <label for="firstName" class="form-label">желаемое количесво комнат</label>
+                      <input name="RoomCount" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid first name is required.
+                      </div>
+                    </div>
+
+
+
                     <div class="col-12">
                       <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
                       <input type="email" class="form-control" id="email" placeholder="you@example.com">
@@ -107,51 +126,69 @@
                         Please enter a valid email address for shipping updates.
                       </div>
                     </div>
-                    
-                    
-        
-                    
-        
+
+
+
+
+
                     <div class="col-12">
                       <label for="address" class="form-label">точный адрес</label>
-                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                      <input name="Address" type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
                       <div class="invalid-feedback">
                         Please enter your shipping address.
                       </div>
                     </div>
-        
+
                     <div class="col-12">
                       <label for="address2" class="form-label">район 2 <span class="text-muted">(Optional)</span></label>
-                      <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                      <input name="AproximateAddress" type="text" class="form-control" id="address2" placeholder="Apartment or suite">
                     </div>
-        
+
                     <div class="col-12">
-                    
+
                     </div>
-                  
-        
-                    <hr class="my-4">
-        
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="same-address">
-                      <label class="form-check-label" for="same-address">покупка</label>
-                    </div>
-        
-                    <div class="form-check">
-                      <input type="checkbox" class="form-check-input" id="save-info">
-                      <label class="form-check-label" for="save-info">продажа</label>
-                    </div>
-        
-                    <hr class="my-4">
-                  
+
+
                     <div class="col-12">
-                                      
+                      <div class="input-group">
+                        <textarea name="Suggestions" class="form-control" placeholder="Описание (доп. пожелания)" aria-label="With textarea"></textarea>
+                      </div>
+
                     </div>
-                  
-        
+
+                    <div class="col-12">
+
+                    </div>
+
+
+                    <hr class="my-4">
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input name="IsRenting" type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">аренда</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input name="IsBuying" type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info">покупка</label>
+                      </div>
+
+                    </div>
+
+
+
+
+                    <hr class="my-4">
+
+                    <div class="col-12">
+
+                    </div>
+
+
                     <h4 class="mb-3">Предпочтительный способ связи</h4>
                     <br/>
-        
+
                     <div class="my-3">
                       <div class="form-check">
                         <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
@@ -166,17 +203,24 @@
                         <label class="form-check-label" for="paypal">PayPal</label>
                       </div>
                     </div>
-        
-                  
-        
+
+
+
                     <hr class="my-4">
-                  
-                  
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Отправить заявку</button>
+
+
                   </div>
                   
 
                 </form>
-              </div>
+          
+          <div class="col-12">
+          
+          </div>
+          
+        </div>
+    
         
     </div>
     

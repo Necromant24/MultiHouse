@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/Index2.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Database/MainImgPostfix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Database/MainImgPostfix.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +152,7 @@
       <workItem from="1610808742762" duration="4334000" />
       <workItem from="1610819556529" duration="1508000" />
       <workItem from="1610980086428" duration="7990000" />
-      <workItem from="1611075665510" duration="6327000" />
+      <workItem from="1611075665510" duration="9079000" />
     </task>
     <servers />
   </component>
