@@ -71,6 +71,8 @@
           <e p="Main" t="Include">
             <e p="House.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
+            <e p="Index2.cshtml" t="Include" />
+            <e p="Index2.cshtml.cs" t="Include" />
           </e>
           <e p="Request" t="Include">
             <e p="Create.cshtml" t="Include" />
@@ -111,6 +113,7 @@
                 <e p="h5.jpg" t="Include" />
                 <e p="h6.jpg" t="Include" />
                 <e p="house10.jpg" t="Include" />
+                <e p="house14.jpg" t="Include" />
               </e>
             </e>
             <e p="logoMH.png" t="Include" />

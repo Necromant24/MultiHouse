@@ -56,6 +56,35 @@ namespace MultiHouse.Controllers
             return View(house);
         }
 
+        public IActionResult Index2([FromForm]HouseSearch houseSearch)
+        {
+            var houses = _context.Houses2.Select(x => x);
+            
+
+            if (houseSearch.Search != null)
+            {
+                houses = houses.Where(x => x.Address.Contains(houseSearch.Search) ||
+                                           x.Description.Contains(houseSearch.Search));
+            }
+
+            if (houseSearch.RoomCount != null && houseSearch.RoomCount!=0)
+            {
+                houses = houses.Where(x => x.RoomCount == houseSearch.RoomCount);
+            }
+
+            if (houseSearch.IsBuying != null)
+            {
+                houses = houses.Where(x => x.IsBuying == houseSearch.IsBuying);
+            }
+
+            if (houseSearch.IsRenting != null)
+            {
+                houses = houses.Where(x => x.IsRenting == houseSearch.IsRenting);
+            }
+            
+            return View(houses.ToList());
+        }
+
 
         public IActionResult Search(string id)
         {

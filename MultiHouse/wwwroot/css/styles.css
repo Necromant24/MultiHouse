@@ -6,10 +6,11 @@
     
 }
 
-.head-grid{
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-}
+
+
+
+
+
 
 .testr{
     background-color: red;
@@ -49,8 +50,8 @@
 
 
 .head-margin{
-    margin-left: 30%;
-    margin-top: 70px;
+    margin-left: 15%;
+    margin-top: 270px;
 }
 
 .head-left-margin{
@@ -76,12 +77,7 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media all and  (max-width: 800px) {
-    .houses-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
+
 
 .house-card{
     display: grid;
@@ -105,4 +101,50 @@
 img.carousel-img{
     width: 450px;
     height: 338px;
+}
+
+
+
+
+
+#hrequest-form{
+    width: 80%;
+}
+
+
+.center-block-main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-text{
+    font-size: large;
+}
+
+
+@media all and  (max-width: 800px) {
+    .houses-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .head-grid{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+    }
+    
+    #head{
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+    }
+    
+}
+
+
+
+@media all and (min-width: 801px) {
+    .head-grid{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
 }

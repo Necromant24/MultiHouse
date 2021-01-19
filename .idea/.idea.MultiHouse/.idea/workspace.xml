@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/Index2.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Main/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Database/MainImgPostfix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Database/MainImgPostfix.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/css/carousel.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,14 +74,15 @@
       <option value="$PROJECT_DIR$/MultiHouse/Database/DBHelper.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/House.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/ImgPostfix.txt" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/MainImgPostfix.txt" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Main/Index2.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles.css" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" />
     </changedPaths>
   </component>
@@ -152,7 +154,11 @@
       <workItem from="1610368700999" duration="4385000" />
       <workItem from="1610469347829" duration="8061000" />
       <workItem from="1610535123059" duration="6274000" />
-      <workItem from="1610644795388" duration="9234000" />
+      <workItem from="1610644795388" duration="9265000" />
+      <workItem from="1610808742762" duration="4334000" />
+      <workItem from="1610819556529" duration="1508000" />
+      <workItem from="1610980086428" duration="7990000" />
+      <workItem from="1611075665510" duration="6327000" />
     </task>
     <servers />
   </component>
