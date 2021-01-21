@@ -2,75 +2,17 @@
 
 @{
     ViewBag.Title = "title";
-    Layout = "_LayoutMH";
+    Layout = "_LayoutMH2";
     
     
 }
 
-<h2>Оставить заявку</h2>
-
 <div>
     
     <div>
-        @* <form method="post" action="/Request/Create" id="hrequest-form"> *@
-        @*     $1$ <div> #1# *@
-        @*     $1$     <input placeholder="Имя" name="FirstName" /> #1# *@
-        @*     $1$     <input placeholder="Фамилия" name="LastName" /> #1# *@
-        @*     $1$     <input placeholder="Отчество" name="Patronymic" /> #1# *@
-        @*     $1$ </div> #1# *@
-        @*      *@
-        @*     <div class="input-group"> *@
-        @*         <input placeholder="Имя" name="FirstName" class="form-control" /> *@
-        @*         <input placeholder="Фамилия" name="LastName" class="form-control" /> *@
-        @*         <input placeholder="Отчество" name="Patronymic" class="form-control" /> *@
-        @*     </div> *@
-        @*      *@
-        @*      *@
-        @*     <div> *@
-        @*         <input name="Phone" placeholder="номер тел." /> *@
-        @*     </div> *@
-        @*     $1$ <div> #1# *@
-        @*     $1$     <input name="Suggestions" placeholder="Описание (доп. пожелания)"/> #1# *@
-        @*     $1$ </div> #1# *@
-        @*      *@
-        @*     <div> *@
-        @*         <input value="@Model.RoomCount" name="RoomCount" type="number" placeholder="кол-во комнат" /> *@
-        @*     </div> *@
-        @*      *@
-        @*     <div> *@
-        @*         <input name="AproximateAddress" placeholder="район"/> *@
-        @*     </div> *@
-        @*      *@
-        @*     <div> *@
-        @*         <input value="@Model.Address" name="Address" placeholder="точный адрес"/> *@
-        @*     </div> *@
-        @*      *@
-        @*     <div> *@
-        @*         Rent:<input name="IsRenting" placeholder="аренда" type="checkbox"/> *@
-        @*                      *@
-        @*     </div> *@
-        @*      *@
-        @*     <div> *@
-        @*         Buy:<input name="IsBuying" placeholder="покупка" type="checkbox"/> *@
-        @*     </div> *@
-        @*      *@
-        @* *@
-        @*     <div class="input-group"> *@
-        @*         <textarea name="Suggestions" class="form-control" placeholder="Описание (доп. пожелания)" aria-label="With textarea"></textarea> *@
-        @*     </div> *@
-        @*      *@
-        @*      *@
-        @*     <input type="hidden" value="@Model.HouseId" name="houseId" /> *@
-        @*      *@
-        @*      *@
-        @* *@
-        @*     <input type="submit" value="отправить" class="btn btn-success" /> *@
-        @* *@
-        @* </form> *@
-        
         
         <div class="col-md-7 col-lg-8">
-                <h4 class="mb-3">Billing address</h4>
+                <h4 class="mb-3">Оставить заявку</h4>
                 <form method="post" action="/Request/Create"  class="needs-validation" novalidate="">
                   <div class="row g-3">
                     

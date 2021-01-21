@@ -2,82 +2,282 @@
 
 @{
     ViewBag.Title = "title";
-    Layout = "_LayoutMH";
+    Layout = "_LayoutMH2";
 }
+
 
 <div>
     
-    
-
-    @if (@Model.Images.Count > 0)
-    {
-    <div class="carousel-container">
+<div class="house-view">
+    <div id="houseview">
+        <div class="container box-shadow card" style="margin: 20px">
         
-            <!-- Bootstrap 4 -->
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    @* <div class="carousel-item active"> *@
-                    @*     <img class="img-fluid carousel-img" src="/img/houses/imgs/h3.jpg" alt="..."> *@
-                    @* </div> *@
-                    @* <div class="carousel-item"> *@
-                    @*     <img class="img-fluid carousel-img" src="/img/houses/imgs/h4.jpg" alt="..."> *@
-                    @* </div> *@
-                    @* <div class="carousel-item"> *@
-                    @*     <img class="img-fluid carousel-img" src="/img/houses/imgs/h5.jpg" alt="..."> *@
-                    @* </div> *@
-
-                    @{
-                        bool first = true;
-                    }
-
-                    @foreach (var imgName in @Model.Images.Select(x => x.Name))
+                <div class="row">
+        
+        
+                    @if (@Model.Images.Count > 0)
                     {
-                        if (@first)
-                        {
-                            <div class="carousel-item active">
-                                <img class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
-                            </div>
-                            first = false;
-                        }
-                        else
-                        {
-                            <div class="carousel-item">
-                                <img class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
-                            </div>
-                        }
-                        
-                    }
-
-
-                </div>
-                <!-- Элементы управления -->
-                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Предыдущий</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Следующий</span>
-                </a>
-            </div>
+                        <div class="carousel-container">
         
+                            <!-- Bootstrap 4 -->
+                            <div id="carousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" style="width: 520px; overflow: hidden;">
+        
+                                    @{
+                                        bool first = true;
+                                    }
+        
+                                    @foreach (var imgName in @Model.Images.Select(x => x.Name))
+                                    {
+                                        if (@first)
+                                        {
+                                            <div style="width: 510px; height: 300px;" class="carousel-item active ">
+                                                <img style="width: 500px; height: 275px;" class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
+                                            </div>
+                                            first = false;
+                                        }
+                                        else
+                                        {
+                                            <div style="width: 510px; height: 300px;" class="carousel-item" style="width: 100%">
+                                                <img style="width: 500px; height: 275px;" class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
+                                            </div>
+                                        }
+        
+                                    }
+        
+        
+                                </div>
+                                <!-- Элементы управления -->
+                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Предыдущий</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Следующий</span>
+                                </a>
+                            </div>
+        
+                        </div>
+                    }
+                </div>
+            
+        
+                <div class="row">
+                    <h4>
+                        Адрес: @Model.Address
+                    </h4>
+                </div>
+                <div class="row">
+                    <h4>
+                        Количество комнат: @Model.RoomCount
+                    </h4>
+        
+                </div>
+        
+                @{
+                    string rent = "нет";
+                    string buy = "нет";
+                    if (@Model.IsRenting == "on")
+                    {
+                        rent = "да";
+                    }
+        
+                    if (@Model.IsBuying == "on")
+                    {
+                        buy = "да";
+                    }
+        
+        
+                }
+        
+                <div class="row">
+                    <h4>
+                        Аренда: @rent
+                    </h4>
+                </div>
+                <div class="row">
+                    <h4>
+                        Продажа: @buy
+                    </h4>
+                </div>
+                <div class="row">
+                    <h4>
+                        Описание
+                    </h4>
+        
+                </div>
+                <div class="row">
+                    <h5>
+                        @Model.Description
+                    </h5>
+        
+                </div>
+        
+        
+            </div>
+    </div>
+    <div id="houserequest" style="margin-left: 40px;">
+        <div>
+                    
+            <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Оставить заявку</h4>
+                <form method="post" action="/Request/Create"  class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                                
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input name="FirstName" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+            
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input name="LastName" type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                                
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Отчество</label>
+                            <input name="Patronymic" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                                
+                                
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">номер телефона</label>
+                            <input name="Phone" type="text" class="form-control" id="lastName" placeholder="8 800 555 35 35" value="" required="">
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+                                
+            
+                        <input type="hidden" value="@Model.RoomCount" name="RoomCount" />
+            
+                        <div class="col-12">
+                            <label for="firstName" class="form-label">количесво комнат: @Model.RoomCount</label>
+                        </div>
+            
+            
+            
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+            
+            
+            
+            
+                        <input type="hidden" value="@Model.Address" name="Address" />
+            
+                        <div class="col-12">
+                            <label for="address" class="form-label">адрес: @Model.Address</label>
+                        </div>
+        
+                        <div class="col-12">
+            
+                        </div>
+            
+            
+                        <div class="col-12">
+                            <div class="input-group">
+                                <textarea name="Suggestions" class="form-control" placeholder="Описание (доп. пожелания)" aria-label="With textarea"></textarea>
+                            </div>
+            
+                        </div>
+            
+                        <div class="col-12">
+            
+                        </div>
+            
+            
+                        <hr class="my-4">
+            
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input name="IsRenting" type="checkbox" class="form-check-input" id="same-address">
+                                <label class="form-check-label" for="same-address">аренда</label>
+                            </div>
+            
+                            <div class="form-check">
+                                <input name="IsBuying" type="checkbox" class="form-check-input" id="save-info">
+                                <label class="form-check-label" for="save-info">покупка</label>
+                            </div>
+            
+                        </div>
+            
+            
+            
+            
+                        <hr class="my-4">
+            
+                        <div class="col-12">
+            
+                        </div>
+            
+            
+                        <h4 class="mb-3">Предпочтительный способ связи</h4>
+                        <br/>
+            
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                                <label class="form-check-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                                <label class="form-check-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+            
+            
+            
+                        <hr class="my-4">
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Отправить заявку</button>
+            
+            
+                    </div>
+                              
+            
+                </form>
+                      
+                <div class="col-12">
+                      
+                </div>
+                      
+            </div>
+                
+                    
         </div>
-    }
-    <h3>
-        <a href="/Request/CreateView/@Model.Id">
-            Подать заявку
-        </a>
-    </h3>
+    </div>
 
-    <h2>
-        @Model.Address
-    </h2>
+</div>
 
-    <p>
-        @Model.Description
-    </p>
+
     
     
+    
+
+
+
+
+
+
+
     <!-- jQuery -->
     <script src="https://itchief.ru/examples/vendors/jquery/jquery-3.3.1.min.js"></script>
     <!-- Popper -->

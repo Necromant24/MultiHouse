@@ -1,0 +1,23 @@
+
+
+@media (min-width: 1101px) {
+
+
+
+    .house-view{
+        display: grid;
+        grid-template: "houseview houserequest";
+    }
+    
+    
+}
+
+@media (max-width: 1100px) {
+    
+    
+    .house-view{
+        display: grid;
+        grid-template: "houseview" "houserequest";
+    }
+    
+}

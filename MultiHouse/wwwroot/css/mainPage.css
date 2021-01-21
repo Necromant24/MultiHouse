@@ -1,0 +1,21 @@
+
+
+@media (min-width: 801px) {
+    .cards-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .cards-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+.card-img{
+    max-height: ;
+}

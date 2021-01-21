@@ -1,0 +1,65 @@
+@model List<House>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutMH2";
+  
+    // https://templates.sitey.ru/startbootstrap-17/index.html
+    // template to this
+  
+}
+
+
+
+<div>
+    <div class="container">
+    
+        
+    
+        <!-- Portfolio Section -->
+        <h2>Представляем доступные квартиры</h2>
+    
+        <div class="row">
+          
+          @foreach (var house in @Model)
+          {
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="/Main/House/@house.Id">
+                  <img onerror="imgErrorHandler(this)" class="card-img-top" src="/img/houses/mainImg/@house.MainImg" alt="">
+                </a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="/Main/House/@house.Id">@house.Address</a>
+                  </h4>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          }
+          
+          <script type="text/javascript">
+          
+          function imgErrorHandler(img){
+            img.onerror = null;
+            img.src = "/img/nophoto.jpg";
+            console.log('error');
+            }
+          
+          </script>
+          
+          
+
+        </div>
+        
+        <hr>
+    
+        <!-- Call to Action Section -->
+        <div class="row mb-4">
+          <div class="col-md-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+          </div>
+        </div>
+    
+      </div>
+</div>

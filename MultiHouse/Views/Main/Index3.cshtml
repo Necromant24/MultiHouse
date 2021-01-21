@@ -1,0 +1,45 @@
+@model List<House>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutMH";
+}
+
+<head>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/" />
+  <link href="https://getbootstrap.com/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+  
+  <title></title>
+</head>
+
+<div>
+    <br/>
+    <div class="cards-grid">
+
+        @foreach (var house in @Model)
+        {
+
+            <div>
+                <a href="/Main/House/@house.Id">
+                    <div>
+                        <img src="/img/houses/mainImg/@house.MainImg" onerror="imgErrorFunction(this)" width="308px" height="169px"/>
+                    </div>
+                    <div>
+                        <p class="card-text">
+                            @house.Address
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+        }
+
+    </div>
+    <script>
+    function imgErrorFunction(source) {
+    	source.onerror=null; // убираем onerror
+    	source.src='https://www.yarkiy.ru/no-photo.jpg'; // подгружаем картинку с альтернативного ресурса
+    	}
+    </script>
+</div>
