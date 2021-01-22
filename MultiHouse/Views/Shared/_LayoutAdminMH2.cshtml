@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://templates.sitey.ru/startbootstrap-17/css/style.css">
+    <link rel="stylesheet" href="https://templates.sitey.ru/startbootstrap-17/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/houseView.css" />
+    
+    
+    
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Multi House</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/Main/Index4">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/About">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Request/CreateView">подать заявку</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/House">создать дом</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Request">список запросов</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+@RenderBody()
+
+</body>
+</html>

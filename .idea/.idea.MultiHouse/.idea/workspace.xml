@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/Index3.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/houseView.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/mainPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH2.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Database/ImgPostfix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Database/ImgPostfix.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Main/Index2.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Main/Index2.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Main/Index2.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,15 +52,11 @@
       <option value="$PROJECT_DIR$/MultiHouse/appsettings.Development.json" />
       <option value="$PROJECT_DIR$/MultiHouse/appsettings.json" />
       <option value="$PROJECT_DIR$/MultiHouse/Pages/Admin/Index.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Pages/House/Index.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/.gitignore" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseSearch.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseImage.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/RequestView.cshtml" />
@@ -94,9 +83,14 @@
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/styles2.css" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/houseView.css" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/Index4.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH2.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mcV2qgifkYzYdOtf8wlSQaiEFu" />
@@ -174,7 +168,8 @@
       <workItem from="1611075665510" duration="10002000" />
       <workItem from="1611139841645" duration="7177000" />
       <workItem from="1611231917151" duration="2165000" />
-      <workItem from="1611253649252" duration="8254000" />
+      <workItem from="1611253649252" duration="8292000" />
+      <workItem from="1611310953017" duration="2976000" />
     </task>
     <servers />
   </component>

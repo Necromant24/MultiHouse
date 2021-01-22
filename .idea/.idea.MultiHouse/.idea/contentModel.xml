@@ -83,6 +83,7 @@
           <e p="Shared" t="Include">
             <e p="_Layout.cshtml" t="Include" />
             <e p="_LayoutAdminMH.cshtml" t="Include" />
+            <e p="_LayoutAdminMH2.cshtml" t="Include" />
             <e p="_LayoutMH.cshtml" t="Include" />
             <e p="_LayoutMH2.cshtml" t="Include" />
             <e p="_ValidationScriptsPartial.cshtml" t="Include" />
