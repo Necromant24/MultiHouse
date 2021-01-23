@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "title";
-    Layout = "_LayoutAdminMH";
+    Layout = "_LayoutAdminMH2";
 }
 
 <div>
@@ -58,13 +58,19 @@
         <input list="statuses" name="status" />
         <datalist id="statuses">
             <option>
-                in progress
+                в приоритете выполнения
             </option>
             <option>
-                not checked
+                в максимальном приоретете выполнения
             </option>
             <option>
-                checked
+                в процессе
+            </option>
+            <option>
+                не проверено
+            </option>
+            <option>
+                проверено
             </option>
         </datalist>
         

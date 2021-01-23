@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MultiHouse.Controllers;
 using MultiHouse.Database;
 
 namespace MultiHouse
@@ -20,6 +21,10 @@ namespace MultiHouse
         {
             var host = CreateHostBuilder(args).Build();
             
+            RequestController.SendEmail();
+            
+            
+            return;
             CreateDbIfNotExists(host);
             
             host.Run();
