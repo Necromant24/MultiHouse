@@ -20,6 +20,7 @@ namespace MultiHouse.Models
         public string Address { get; set; }
         public string IsRenting { get; set; }
         public string IsBuying { get; set; }
+        public string EmailAddress { get; set; }
 
         // not checked || checked || in progress
         public string Status { get; set; } = "not checked";

@@ -26,6 +26,23 @@ namespace MultiHouse.Controllers
             return View(_context.HousesRequests.Select(x=>x).ToList());
         }
 
+
+        public IActionResult RequestsView([FromQuery]RequestsFilter filter)
+        {
+            var requests = _context.HousesRequests.Select(x => x);
+            
+            if (filter.Status != null && filter.Status != "")
+            {
+                requests = requests.Where(x => x.Status == filter.Status);
+            }
+            
+            
+            
+            return View("Index",requests.ToList());
+        }
+        
+        
+
         public IActionResult RequestView(int id)
         {
             return View(_context.HousesRequests.First(x=>x.Id==id));
@@ -48,9 +65,18 @@ namespace MultiHouse.Controllers
         public IActionResult Create([FromForm]HouseRequest houseRequest)
         {
 
+            if (houseRequest.EmailAddress != null && houseRequest.EmailAddress != "")
+            {
+                SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", PersonalData.GMailPassword, houseRequest.EmailAddress,
+                    "Уведомление об успешной подачи заявки в сервисе MultiHouse", "Ваша заявка принята, с вами свяжутся позднее", null);
+
+            }
+
             
             _context.HousesRequests.Add(houseRequest);
             _context.SaveChanges();
+
+            ViewData["status"] = "заявка принята, проверьте почту";
             
             return View(new HouseRequest());
         }
@@ -98,9 +124,12 @@ namespace MultiHouse.Controllers
         public static void SendEmail2()
         {
             
-            SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "kkeshax@gmail.com", "Тема письма", "Тело письма", null);
-            SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "kesha.tkachenko2017@mail.ru", "Тема письма", "Тело письма", null);
+            // SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "kkeshax@gmail.com", "Тема письма", "Тело письма", null);
+            // SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "kesha.tkachenko2017@mail.ru", "Тема письма", "Тело письма", null);
 
+            SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "klfkb'dsjb'jbshax@gmail.com", "Тема письма", "Тело письма", null);
+
+            
             
         }
         

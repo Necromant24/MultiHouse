@@ -23,6 +23,7 @@
           <e p="ImgPostfix.txt" t="Include" />
           <e p="MainImgPostfix.txt" t="Include" />
           <e p="MHContext.cs" t="Include" />
+          <e p="PersonalData.cs" t="Include" />
         </e>
         <e p="Helpers" t="Include">
           <e p="DataHelper.cs" t="Include" />
@@ -35,6 +36,7 @@
           <e p="HouseRequest.cs" t="Include" />
           <e p="HouseSearch.cs" t="Include" />
           <e p="HouseUpload.cs" t="Include" />
+          <e p="RequestsFilter.cs" t="Include" />
         </e>
         <e p="MultiHouse.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

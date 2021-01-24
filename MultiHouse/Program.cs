@@ -21,11 +21,9 @@ namespace MultiHouse
         {
             var host = CreateHostBuilder(args).Build();
             
-            RequestController.SendEmail();
+            //RequestController.SendEmail();
             
-            
-            return;
-            CreateDbIfNotExists(host);
+            //CreateDbIfNotExists(host);
             
             host.Run();
         }
@@ -62,7 +60,7 @@ namespace MultiHouse
                     
                     
                     
-                    //DBHelper.InsertTestData(context);
+                    DBHelper.InsertTestData(context);
                 
             }
         }

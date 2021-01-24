@@ -57,21 +57,11 @@
     <form method="post" action="/Request/EditStatus?id=@Model.Id">
         <input list="statuses" name="status" />
         <datalist id="statuses">
-            <option>
-                в приоритете выполнения
-            </option>
-            <option>
-                в максимальном приоретете выполнения
-            </option>
-            <option>
-                в процессе
-            </option>
-            <option>
-                не проверено
-            </option>
-            <option>
-                проверено
-            </option>
+            <option>не проверено</option>
+            <option>проверено</option>
+            <option>в обработке</option>
+            <option>в приоритете обработки</option>
+            <option>в большем приоритете обработки</option>
         </datalist>
         
         <input type="submit" value="change status" />
