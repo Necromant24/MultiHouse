@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/EmailData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/PasswordData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/PasswordSetView.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +75,6 @@
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/.gitignore" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/RequestsFilter.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" />
@@ -107,6 +97,7 @@
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/PasswordSetView.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/.gitignore" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mcV2qgifkYzYdOtf8wlSQaiEFu" />
@@ -189,7 +180,7 @@
       <workItem from="1611433608061" duration="2491000" />
       <workItem from="1611491399172" duration="1651000" />
       <workItem from="1611520255064" duration="3127000" />
-      <workItem from="1611564935550" duration="9178000" />
+      <workItem from="1611564935550" duration="9252000" />
     </task>
     <servers />
   </component>
