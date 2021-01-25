@@ -1,88 +1,120 @@
-@model dynamic
+@model List<House>
 
 @{
     ViewBag.Title = "title";
-    Layout = "_LayoutAdminMH2";
+    Layout = "_LayoutMH2";
+  
+    // https://templates.sitey.ru/startbootstrap-17/index.html
+    // template to this
+  
 }
 
+
+
 <div>
-    <h3>
-        Add new House
-    </h3>
+    <div class="container">
     
-    <form enctype="multipart/form-data" method="post" action="/House/HouseUpload">
-        <input name="description" placeholder="description" />
-        <input name="RoomCount" type="number" placeholder="RoomCount"  />
-        <input name="Address" placeholder="Address"  />
-        Is Rent <input name="IsRenting" type="checkbox" />
-        Is Buy <input name="IsBuying" type="checkbox" />
-        <input name="MainImg" type="file" />
-        <input type="file" multiple="multiple" name="Images">
-        <input type="submit" value="create" />
         
-    </form>
     
+        <!-- Portfolio Section -->
+        <h2>Представляем доступные квартиры</h2>
+        
+        <div class="container">
+          <div>
+            <form method="get" action="">
+              
+              <div class="col-6">
+                <input name="Search" class="form-control" placeholder="поиск..." type="text"/>
+                
+              </div>
+              
+
+              <div class="col-2">
+                <span>кол-во комнат:</span>
+                <input name="RoomCount" list="RoomCount" class="form-control" type="text" placeholder="число"/>
+                
+                <datalist id="RoomCount">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                </datalist>
+
+              </div>
+
+              <div class="col">
+                <div class="input-group mb-3">
+                  <div class="input-group-text">
+                    <input name="IsBuying" class="form-check-input" style="margin-left: 0px;margin-right: 0px;" type="checkbox" value="" aria-label="Checkbox for following text input">
+                  </div>
+                  <span>продажа</span>
+                </div>
+
+                <div class="input-group mb-3">
+                  <div class="input-group-text">
+                    <input name="IsRenting" class="form-check-input" style="margin-left: 0px;margin-right: 0px;" type="checkbox" value="" aria-label="Checkbox for following text input">
+                  </div>
+                  <span>аренда</span>
+                </div>
+                
+              </div>
+
+              
+
+
+
+              <input type="submit" class="btn btn-primary" value="поиск"/>
+            </form>
+          </div>
+        </div>
+        
+        <hr class="my-4" />
     
+        <div class="row">
+          
+          @foreach (var house in @Model)
+          {
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+              <div class="card h-100">
+                <a href="/House/HouseView/@house.Id">
+                  <img onerror="imgErrorHandler(this)" class="card-img-top" src="/img/houses/mainImg/@house.MainImg" alt="">
+                </a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="/House/HouseView/@house.Id">@house.Address</a>
+                  </h4>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+          }
+          
+          <script type="text/javascript">
+          
+          function imgErrorHandler(img){
+            img.onerror = null;
+            img.src = "/img/nophoto.jpg";
+            console.log('error');
+            }
+          
+          </script>
+          
+          
+
+        </div>
+        
+        <hr>
     
-    <script type="text/javascript">
+        <!-- Call to Action Section -->
+        <div class="row mb-4">
+          <div class="col-md-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+          </div>
+        </div>
     
-    
-    
-     function getFileData () {
-    
-                        imgContainer = document.getElementById('imgContainer');
-    
-    
-                        let finput = document.getElementById('file-input');
-                        finput.onchange = function (e) {
-    
-                            let f = e.target.files[0];
-    
-                            let img = new Image();
-    
-                            let reader = new FileReader();
-    
-                            img.onload = function (e) {
-                                
-                                reader.readAsArrayBuffer(f);
-                            }
-    
-                            img.src = URL.createObjectURL(f);
-    
-                            reader.onloadend = function (e) {
-    
-                                let buf = reader.result;
-                                let uintbuf = new Uint8Array(buf);
-    
-                                sendFile(uintbuf);
-                            }
-    
-                        }
-    
-                    }
-    
-     function sendFile(buffer) {
-    
-                        let url = "/api/Avatars";
-    
-                        let data = {
-                            Buffer: buffer.toString(),
-                            FileName: "some.jpg",
-                            UserId: "<%=User.UserId %>"
-                        };
-    
-                        fetch(url, {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json'
-                            },
-                            body: JSON.stringify(data)
-                        }).then((data) => {
-                            console.log(data);
-                        });
-    
-    
-                    }
-    </script>
-    
+      </div>
 </div>

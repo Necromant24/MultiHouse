@@ -23,12 +23,28 @@ namespace MultiHouse.Controllers
         // GET
         public IActionResult Index()
         {
+
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+            
             return View(_context.HousesRequests.Select(x=>x).ToList());
         }
 
 
         public IActionResult RequestsView([FromQuery]RequestsFilter filter)
         {
+            
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+            
             var requests = _context.HousesRequests.Select(x => x);
             
             if (filter.Status != null && filter.Status != "")
@@ -45,11 +61,25 @@ namespace MultiHouse.Controllers
 
         public IActionResult RequestView(int id)
         {
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+            
             return View(_context.HousesRequests.First(x=>x.Id==id));
         }
 
         public IActionResult EditStatus()
         {
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+            
             int hRequestId = Convert.ToInt32(Request.Query["id"]);
             HouseRequest hr = _context.HousesRequests.First(x => x.Id == hRequestId);
 
@@ -99,41 +129,6 @@ namespace MultiHouse.Controllers
             return View("Create", houseRequest);
         }
 
-
-
-
-        public static void SendEmail()
-        {
-            SendEmail2();
-        }
-        
-        
-        public static void SendEmail1()
-        {
-            MailAddress from = new MailAddress("kesha.tkachenko2017@mail.ru", "Necromant");
-            MailAddress to = new MailAddress("innokentijtkacenko@gmail.com");
-            MailMessage m = new MailMessage(from, to);
-            m.Subject = "Тест";
-            m.Body = "Письмо-тест 2 работы smtp-клиента";
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-            smtp.Credentials = new NetworkCredential("kesha.tkachenko2017@mail.ru", "Kesha03x_kesha03x");
-            smtp.EnableSsl = true;
-            smtp.SendMailAsync(m);
-        }
-        
-        public static void SendEmail2()
-        {
-            
-            // SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "kkeshax@gmail.com", "Тема письма", "Тело письма", null);
-            // SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "kesha.tkachenko2017@mail.ru", "Тема письма", "Тело письма", null);
-
-            SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", "kesha03x#", "klfkb'dsjb'jbshax@gmail.com", "Тема письма", "Тело письма", null);
-
-            
-            
-        }
-        
-        
         
         
         /// <summary>
@@ -172,9 +167,6 @@ namespace MultiHouse.Controllers
                 throw new Exception("Mail.Send: " + e.Message);
             }
         }
-        
-        
-        
         
         
         

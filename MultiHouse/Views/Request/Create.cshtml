@@ -21,12 +21,12 @@
         
         
         <h4 class="mb-3">Оставить заявку</h4>
-        <form method="post" action="/Request/Create" class="needs-validation" novalidate="">
+        <form method="post" action="/Request/Create" class="needs-validation">
           <div class="row g-3">
 
             <div class="col-sm-6">
               <label for="firstName" class="form-label">First name</label>
-              <input name="FirstName" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <input required name="FirstName" type="text" class="form-control" id="firstName" placeholder="" value="">
               <div class="invalid-feedback">
                 Valid first name is required.
               </div>
@@ -34,7 +34,7 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Last name</label>
-              <input name="LastName" type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <input required name="LastName" type="text" class="form-control" id="lastName" placeholder="" value="">
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
@@ -42,7 +42,7 @@
 
             <div class="col-sm-6">
               <label for="firstName" class="form-label">Отчество</label>
-              <input name="Patronymic" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <input name="Patronymic" type="text" class="form-control" id="firstName" placeholder="" value="">
               <div class="invalid-feedback">
                 Valid first name is required.
               </div>
@@ -51,7 +51,7 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">номер телефона</label>
-              <input name="Phone" type="text" class="form-control" id="lastName" placeholder="8 800 555 35 35" value="" required="">
+              <input  required name="Phone" type="text" class="form-control" id="lastName" placeholder="8 800 555 35 35" value="">
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
@@ -61,7 +61,7 @@
 
             <div class="col-12">
               <label for="firstName" class="form-label">желаемое количесво комнат</label>
-              <input name="RoomCount" type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <input name="RoomCount" type="text" class="form-control" id="firstName" placeholder="" value="" >
               <div class="invalid-feedback">
                 Valid first name is required.
               </div>
@@ -71,7 +71,7 @@
 
             <div class="col-12">
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-              <input name="EmailAddress" type="email" class="form-control" id="email" placeholder="you@example.com">
+              <input  required name="EmailAddress" type="email" class="form-control" id="email" placeholder="you@example.com">
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
@@ -83,7 +83,7 @@
 
             <div class="col-12">
               <label for="address" class="form-label">точный адрес</label>
-              <input name="Address" type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+              <input name="Address" type="text" class="form-control" id="address" placeholder="1234 Main St" >
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>

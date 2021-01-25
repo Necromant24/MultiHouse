@@ -1,0 +1,7 @@
+
+Admin Guarded Paths:
+    /House/Create
+    /House/HouseUpload
+    /Request
+    /Request/RequestView/{id}
+    /Request/EditStatus/{id}

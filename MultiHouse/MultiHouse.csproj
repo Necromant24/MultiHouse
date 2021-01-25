@@ -32,6 +32,8 @@
       <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\450476b7618698f51a4849bb2fd510d8.jpg" />
       <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\d798f3a72cca1a5dbcb48a8462203422.png" />
       <_ContentIncludedByDefault Remove="wwwroot\img\imgssome\fdfd67803eaafe3a4e6e49706efe02a4.jpg" />
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
     </ItemGroup>
 	
 	

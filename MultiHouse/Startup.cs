@@ -61,7 +61,7 @@ namespace MultiHouse
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Main}/{action=Index}/{id?}");
+                    pattern: "{controller=House}/{action=Index}/{id?}");
             });
         }
         

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MultiHouse.Database;
 using MultiHouse.Helpers;
 using MultiHouse.Models;
@@ -52,22 +53,57 @@ namespace MultiHouse.Controllers
             
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromQuery]HouseSearch houseSearch)
         {
+            var houses = _context.Houses2.Select(x => x);
+            
 
+            if (houseSearch.Search != null)
+            {
+                houses = houses.Where(x => x.Address.Contains(houseSearch.Search) ||
+                                           x.Description.Contains(houseSearch.Search));
+            }
+
+            if (houseSearch.RoomCount != null && houseSearch.RoomCount!=0)
+            {
+                houses = houses.Where(x => x.RoomCount == houseSearch.RoomCount);
+            }
+
+            if (houseSearch.IsBuying == "on")
+            {
+                houses = houses.Where(x => x.IsBuying == houseSearch.IsBuying);
+            }
+
+            if (houseSearch.IsRenting == "on")
+            {
+                houses = houses.Where(x => x.IsRenting == houseSearch.IsRenting);
+            }
+            
+            return View(houses.ToList());
+        }
+
+        public IActionResult Create()
+        {
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+            
             return View();
         }
-
-        public string Create([FromForm]House house)
+        
+        
+        public IActionResult HouseView(int id)
         {
+            var house = _context.Houses2
+                .Include(x => x.Images)
+                .First(x => x.Id == id);
             
-            //TODO: разобраться с картинками
-
-            _context.Houses2.Add(house);
-            _context.SaveChanges();
-
-            return "ok";
+            return View(house);
         }
+
 
         public string Delete(int id)
         {
@@ -83,8 +119,15 @@ namespace MultiHouse.Controllers
         
 
 
-        public string HouseUpload([FromForm]HouseUpload houseUpload)
+        public IActionResult HouseUpload([FromForm]HouseUpload houseUpload)
         {
+            
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
 
             string imgPostfixFile = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/ImgPostfix.txt";
             string mainImgPostfixFile = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/MainImgPostfix.txt";
@@ -119,7 +162,7 @@ namespace MultiHouse.Controllers
             System.IO.File.WriteAllText(mainImgPostfixFile,mainImgPostfix.ToString());
             System.IO.File.WriteAllText(imgPostfixFile,imgPostfix.ToString());
             
-            return "ok";
+            return Redirect("/House/Create");
         }
 
 

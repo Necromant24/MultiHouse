@@ -25,6 +25,8 @@ namespace MultiHouse
             
             //CreateDbIfNotExists(host);
             
+            // TODO: refactor all code
+            
             host.Run();
         }
 
