@@ -1,0 +1,19 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutMH2";
+}
+
+<div>
+    <div>
+        
+    </div>
+    <form method="post" action="/Admin/EmailSet">
+        <input name="Email" type="email" placeholder="email adress" />
+        <input name="EmailPasword" type="password" placeholder="email password" />
+        <input name="AdminPassword" type="password" placeholder="admin password" />
+        <input type="submit" value="set email" />
+    </form>
+    
+</div>

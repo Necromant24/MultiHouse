@@ -1,6 +1,7 @@
 using System.Net;
 using Microsoft.AspNetCore.Http;
 using MultiHouse.Controllers;
+using MultiHouse.Database;
 using MultiHouse.Models;
 
 namespace MultiHouse.Helpers
@@ -25,7 +26,7 @@ namespace MultiHouse.Helpers
 
         public static bool IsAdminAuthorized(HttpContext ctx)
         {
-            return ctx.Request.Cookies["auth_token"] == AdminController.AuthToken;
+            return ctx.Request.Cookies["auth_token"] == PersonalData.AuthToken;
         }
         
     }

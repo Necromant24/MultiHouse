@@ -20,6 +20,8 @@ namespace MultiHouse
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
+
+            PersonalData.AuthToken = Guid.NewGuid().ToString();
             
             //RequestController.SendEmail();
             

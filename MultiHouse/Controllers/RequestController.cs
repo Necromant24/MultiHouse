@@ -97,11 +97,11 @@ namespace MultiHouse.Controllers
 
             if (houseRequest.EmailAddress != null && houseRequest.EmailAddress != "")
             {
-                SendMail("smtp.gmail.com", "qwertyqwerty30792@gmail.com", PersonalData.GMailPassword, houseRequest.EmailAddress,
+                SendMail("smtp.gmail.com", PersonalData.EmailAddress, PersonalData.EMailPassword, houseRequest.EmailAddress,
                     "Уведомление об успешной подачи заявки в сервисе MultiHouse", "Ваша заявка принята, с вами свяжутся позднее", null);
 
             }
-
+            
             
             _context.HousesRequests.Add(houseRequest);
             _context.SaveChanges();

@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH.cshtml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/EmailData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/PasswordData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/PasswordSetView.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,15 +35,19 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D2B0EF7B-A8C3-4AF1-95CC-501C0131D7BA/C/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/409/Collection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/3E/String.Comparison.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26B86A96-43D2-417A-8D83-30B1F2C4A06D/30/MailPriority.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26B86A96-43D2-417A-8D83-30B1F2C4A06D/2F/MailMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ABD8126B-966E-414A-9571-A6B06E3B4A28/11A/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26B86A96-43D2-417A-8D83-30B1F2C4A06D/2E/MailAddressCollection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1D0/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1AB/CancellationToken.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ABD8126B-966E-414A-9571-A6B06E3B4A28/10F/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1D5/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26B86A96-43D2-417A-8D83-30B1F2C4A06D/3A/SmtpClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1B2/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04924406-BACA-48B4-9254-8097E2E1D035/E/Controller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ABD8126B-966E-414A-9571-A6B06E3B4A28/5/ObjectMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/2C2/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ABD8126B-966E-414A-9571-A6B06E3B4A28/38/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2C002A74-B0B2-4A2F-930C-2E94672A05AD/4A/RelationalCommand.cs" root0="SKIP_HIGHLIGHTING" />
@@ -43,10 +56,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/MultiHouse/Pages/Main/Index.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Controllers/About.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Pages/About/Index.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Pages/Request/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/Request.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/appsettings.Development.json" />
@@ -56,8 +65,6 @@
       <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseImage.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/carousel.css" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/MHContext.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/DBHelper.cs" />
@@ -82,8 +89,6 @@
       <option value="$PROJECT_DIR$/MultiHouse/Models/RequestsFilter.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/RequestView.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseSearch.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Startup.cs" />
@@ -93,7 +98,15 @@
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Docs/AdminDocs.txt" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Models/PasswordData.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Models/EmailData.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/PasswordSetView.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mcV2qgifkYzYdOtf8wlSQaiEFu" />
@@ -176,7 +189,7 @@
       <workItem from="1611433608061" duration="2491000" />
       <workItem from="1611491399172" duration="1651000" />
       <workItem from="1611520255064" duration="3127000" />
-      <workItem from="1611564935550" duration="5593000" />
+      <workItem from="1611564935550" duration="9178000" />
     </task>
     <servers />
   </component>
@@ -228,6 +241,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs</url>
+          <line>61</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\AdminController.cs" initialLine="61" containingFunctionPresentation="method 'Panel'">
+            <startOffsets>
+              <option value="1417" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1460" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs</url>
+          <line>26</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\AdminController.cs" initialLine="26" containingFunctionPresentation="method 'PasswordSet'">
+            <startOffsets>
+              <option value="511" />
+            </startOffsets>
+            <endOffsets>
+              <option value="562" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs</url>
+          <line>43</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\AdminController.cs" initialLine="43" containingFunctionPresentation="method 'EmailSet'">
+            <startOffsets>
+              <option value="965" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1018" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
