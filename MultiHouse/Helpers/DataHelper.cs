@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Net;
 using Microsoft.AspNetCore.Http;
 using MultiHouse.Controllers;
@@ -8,6 +9,17 @@ namespace MultiHouse.Helpers
 {
     public static class DataHelper
     {
+
+
+        public static void InitVariables()
+        {
+            using (var ctx = new  MHContext())
+            {
+                HouseController.mainImgPostfix = ctx.HouseImages.OrderBy(x=>x.Id).Last().Id + 1;
+                HouseController.imgPostfix = ctx.Houses2.OrderBy(x=>x.Id).Last().Id + 1;
+            }
+            
+        }
 
         public static House HUploadToHouse(HouseUpload houseUpload)
         {

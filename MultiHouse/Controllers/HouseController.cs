@@ -18,39 +18,16 @@ namespace MultiHouse.Controllers
     {
         private readonly MHContext _context;
         
-        string filePath = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/MainImgPostfix.txt";
-
-        string filePath2 = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/ImgPostfix.txt";
-
+        
 
         public static int? mainImgPostfix = null;
         public static int? imgPostfix = null;
 
         
-        static string mainImgSaveDir = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/wwwroot/img/houses/";
-        static string ImgsSaveDir = mainImgSaveDir+"imgs/";
-        
-        
-        
         public HouseController(MHContext context)
         {
             _context = context;
 
-            if (imgPostfix == null)
-            {
-                 string data = System.IO.File.ReadAllText(filePath);
-                int postfix = Convert.ToInt32(data);
-                imgPostfix = postfix;
-            }
-            
-            if (mainImgPostfix == null)
-            {
-                string data = System.IO.File.ReadAllText(filePath2);
-                int postfix = Convert.ToInt32(data);
-                mainImgPostfix = postfix;
-            }
-            
-            
         }
 
         public IActionResult Index([FromQuery]HouseSearch houseSearch)
@@ -129,8 +106,6 @@ namespace MultiHouse.Controllers
                 return Redirect("/Admin");
             }
 
-            string imgPostfixFile = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/ImgPostfix.txt";
-            string mainImgPostfixFile = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/Database/MainImgPostfix.txt";
 
             var fileName ="house"+mainImgPostfix+".jpg";
             
@@ -158,10 +133,7 @@ namespace MultiHouse.Controllers
             _context.SaveChanges();
 
             ++mainImgPostfix;
-            
-            System.IO.File.WriteAllText(mainImgPostfixFile,mainImgPostfix.ToString());
-            System.IO.File.WriteAllText(imgPostfixFile,imgPostfix.ToString());
-            
+
             return Redirect("/House/Create");
         }
 
@@ -169,7 +141,7 @@ namespace MultiHouse.Controllers
 
         public void SaveWebImage(IFormFile file, string name, bool isMain = false)
         {
-            var savePath = "C:/Users/Necromant/RiderProjects/MultiHouse/MultiHouse/wwwroot/img/houses/";
+            var savePath = "wwwroot/img/houses/";
             if (isMain)
             {
                 savePath += "mainImg/";

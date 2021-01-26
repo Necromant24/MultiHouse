@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MultiHouse.Controllers;
 using MultiHouse.Database;
+using MultiHouse.Helpers;
 
 namespace MultiHouse
 {
@@ -22,6 +23,8 @@ namespace MultiHouse
             var host = CreateHostBuilder(args).Build();
 
             PersonalData.AuthToken = Guid.NewGuid().ToString();
+            
+            DataHelper.InitVariables();
             
             //RequestController.SendEmail();
             
@@ -68,6 +71,15 @@ namespace MultiHouse
                 
             }
         }
+
+
+
+        void initLocalVariables()
+        {
+            
+        }
+        
+        
 
     }
 }
