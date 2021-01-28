@@ -9,18 +9,29 @@ namespace MultiHouse.Database
 
         public static void InsertTestData(MHContext dc)
         {
-            dc.Database.Migrate();
             
-
             bool created = dc.Database.EnsureCreated();
             
-            if (!created)
+            if (created)
             {
                 InsertTestHouses(dc);
-                InsertTestHouseRequests(dc);  
+                InsertTestHouseRequests(dc);
             }
             
         }
+
+
+
+        public static void InsertTestHouseImgs(MHContext dc)
+        {
+            dc.HouseImages.AddRange(new List<HouseImage>()
+            {
+                new HouseImage(){}
+            });
+        }
+        
+        
+        
         
         public static void InsertTestHouses(MHContext dc)
         {

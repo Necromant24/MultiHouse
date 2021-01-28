@@ -1,8 +1,11 @@
+@using Microsoft.AspNetCore.Http
+@using MultiHouse.Helpers
 @model House
 
 @{
+
     ViewBag.Title = "title";
-    Layout = "_LayoutMH2";
+    Layout = (string)ViewData["layout"];
 }
 
 

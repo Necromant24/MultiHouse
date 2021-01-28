@@ -41,11 +41,20 @@ namespace MultiHouse.Controllers
         
         public IActionResult EmailSet([FromForm]EmailData data)
         {
+            
+            
+            
             if (data.AdminPassword == PersonalData.AdminPassword)
             {
                 PersonalData.AuthToken = Guid.NewGuid().ToString();
                 PersonalData.EmailAddress = data.Email;
                 PersonalData.EMailPassword = data.EmailPasword;
+
+                ViewData["status"] = "email setted";
+            }
+            else
+            {
+                ViewData["status"] = "invalid admin password";
             }
             
             
@@ -56,7 +65,7 @@ namespace MultiHouse.Controllers
         
         
         
-
+        
         public IActionResult Panel()
         {
             string password = Request.Form["password"];

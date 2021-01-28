@@ -31,8 +31,9 @@ namespace MultiHouse
             //     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             
             services.AddDbContext<MHContext>(options =>
-                options.UseSqlServer("Server=.\\sqlexpress;Database=MH2;User Id=MHadmin;password=MHadmin1;Trusted_Connection=False;MultipleActiveResultSets=true;"));
-            
+                //options.UseSqlServer("Server=.\\sqlexpress;Database=MH2;User Id=MHadmin;password=MHadmin1;Trusted_Connection=False;MultipleActiveResultSets=true;"));
+                options.UseSqlite("Data Source=wwwroot/database/mh.db"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,0 +1,16 @@
+@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_LayoutAdminMH2";
+}
+
+<div>
+    <div>
+        @ViewData["status"]
+    </div>
+    <form method="post" action="/House/Delete">
+        <input name="houseId" type="number" placeholder="house id"/>
+        <input type="submit" value="удалить обьявление"/>
+    </form>
+</div>

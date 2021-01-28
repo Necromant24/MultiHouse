@@ -17,7 +17,10 @@ namespace MultiHouse.Database
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer("Server=.\\sqlexpress;Database=MH2;User Id=MHadmin;password=MHadmin1;Trusted_Connection=False;MultipleActiveResultSets=true;");
+            //options.UseSqlServer("Server=.\\sqlexpress;Database=MH2;User Id=MHadmin;password=MHadmin1;Trusted_Connection=False;MultipleActiveResultSets=true;");
+            options.UseSqlite("Data Source=wwwroot/database/mh.db");
+
+            
         }
              
         public MHContext()

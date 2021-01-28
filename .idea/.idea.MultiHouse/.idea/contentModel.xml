@@ -66,6 +66,7 @@
           </e>
           <e p="House" t="Include">
             <e p="Create.cshtml" t="Include" />
+            <e p="DeleteView.cshtml" t="Include" />
             <e p="HouseView.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
           </e>
@@ -88,7 +89,12 @@
             <e p="styles.css" t="Include" />
             <e p="styles2.css" t="Include" />
           </e>
-          <e p="favicon.ico" t="Include" />
+          <e p="Database" t="Include">
+            <e p="mh.db" t="Include" />
+          </e>
+          <e p="favicon.png" t="Include" />
+          <e p="favicon2.ico" t="Include" />
+          <e p="favicon3.png" t="Include" />
           <e p="img" t="Include">
             <e p="houses" t="Include">
               <e p="imgs" t="Include">
@@ -121,6 +127,7 @@
             </e>
             <e p="logoMH.png" t="Include" />
             <e p="logoza.ru.png" t="Include" />
+            <e p="MHlogo.png" t="Include" />
             <e p="nophoto.jpg" t="Include" />
           </e>
           <e p="js" t="Include">

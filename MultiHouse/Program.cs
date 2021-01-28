@@ -24,11 +24,13 @@ namespace MultiHouse
 
             PersonalData.AuthToken = Guid.NewGuid().ToString();
             
+            CreateDbIfNotExists(host);
+            
             DataHelper.InitVariables();
             
             //RequestController.SendEmail();
             
-            //CreateDbIfNotExists(host);
+            
             
             // TODO: refactor all code
             
@@ -47,24 +49,15 @@ namespace MultiHouse
                 var services = scope.ServiceProvider;
                 
                     var context = services.GetRequiredService<MHContext>();
-                    
-                    
+
+
+                    //var deleted = context.Database.EnsureDeleted();
                     
                     //context.Database.Migrate();
 
                     //context.SaveChanges();
 
                     bool connected = context.Database.CanConnect();
-                    bool created = context.Database.EnsureCreated();
-                    
-
-                    if (false)
-                    {
-                        RelationalDatabaseCreator databaseCreator =
-                            (RelationalDatabaseCreator)context.Database.GetService<IDatabaseCreator>();
-                        databaseCreator.CreateTables();
-                    }
-                    
                     
                     
                     DBHelper.InsertTestData(context);

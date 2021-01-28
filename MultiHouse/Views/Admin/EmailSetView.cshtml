@@ -8,12 +8,27 @@
 <div>
     <div>
         
+        @if (((string)ViewData["status"])!=""&&((string)ViewData["status"])!=null)
+        {
+            <h4>
+                <span class="badge bg-secondary">
+                    @((string)ViewData["status"])
+                </span>
+            </h4>
+        }
+
     </div>
     <form method="post" action="/Admin/EmailSet">
-        <input name="Email" type="email" placeholder="email adress" />
-        <input name="EmailPasword" type="password" placeholder="email password" />
-        <input name="AdminPassword" type="password" placeholder="admin password" />
-        <input type="submit" value="set email" />
+        
+        <div class="input-group">
+          <input name="Email" type="text" aria-label="First name" class="form-control" placeholder="email adress" >
+          <input name="EmailPasword" type="password" aria-label="Last name" class="form-control" placeholder="email password" >
+          <input name="AdminPassword" type="password" aria-label="Last name" class="form-control" placeholder="admin password" >
+          <br>
+          <input class="btn btn-info" type="submit" value="set email" />
+        </div>
+        
+        
     </form>
     
 </div>

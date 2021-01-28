@@ -23,6 +23,7 @@
 
     <ItemGroup>
       <Folder Include="Pages" />
+      <Folder Include="wwwroot\database" />
     </ItemGroup>
 
     <ItemGroup>

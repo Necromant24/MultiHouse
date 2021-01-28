@@ -30,6 +30,23 @@ namespace MultiHouse.Controllers
 
         }
 
+
+
+        string selectLayout(HttpContext ctx)
+        {
+            if (DataHelper.IsAdminAuthorized(ctx))
+            {
+                return "_LayoutAdminMH2";
+            }
+            else
+            {
+                return "_LayoutMH2";
+            }
+        }
+        
+        
+        
+
         public IActionResult Index([FromQuery]HouseSearch houseSearch)
         {
             var houses = _context.Houses2.Select(x => x);
@@ -56,6 +73,8 @@ namespace MultiHouse.Controllers
                 houses = houses.Where(x => x.IsRenting == houseSearch.IsRenting);
             }
             
+            ViewData["layout"] = selectLayout(HttpContext);
+            
             return View(houses.ToList());
         }
 
@@ -68,6 +87,7 @@ namespace MultiHouse.Controllers
                 return Redirect("/Admin");
             }
             
+            
             return View();
         }
         
@@ -77,20 +97,52 @@ namespace MultiHouse.Controllers
             var house = _context.Houses2
                 .Include(x => x.Images)
                 .First(x => x.Id == id);
+
+            ViewData["layout"] = selectLayout(HttpContext);
             
             return View(house);
         }
 
 
-        public string Delete(int id)
+        public IActionResult Delete()
         {
-            var house = _context.Houses2.First(x => x.Id == id);
+            
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+
+            int houseId = Convert.ToInt32(Request.Form["houseId"]);
+            
+            
+            var house = _context.Houses2.First(x => x.Id == houseId);
             _context.Houses2.Remove(house);
 
             _context.SaveChanges();
+
+            ViewData["status"] = "удален дом с id - "+houseId+"по адресу - "+house.Address;
             
-            return "ok";
+            return View("DeleteView");
         }
+        
+        
+        public IActionResult DeleteView()
+        {
+            
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+
+            
+            return View();
+        }
+        
+        
 
         
         
@@ -124,7 +176,7 @@ namespace MultiHouse.Controllers
             {
                 var imgName = "h" + imgPostfix + ".jpg";
                 SaveWebImage(houseImg,imgName);
-                house.Images.Add(new HouseImage(){Name = imgName});
+                house.Images.Add(new HouseImage(){Name = imgName, HouseId = (int)mainImgPostfix});
                 imgPostfix++;
             }
 

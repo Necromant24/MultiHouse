@@ -15,8 +15,8 @@ namespace MultiHouse.Helpers
         {
             using (var ctx = new  MHContext())
             {
-                HouseController.mainImgPostfix = ctx.HouseImages.OrderBy(x=>x.Id).Last().Id + 1;
-                HouseController.imgPostfix = ctx.Houses2.OrderBy(x=>x.Id).Last().Id + 1;
+                HouseController.mainImgPostfix = 10;
+                HouseController.imgPostfix = 0;
             }
             
         }
