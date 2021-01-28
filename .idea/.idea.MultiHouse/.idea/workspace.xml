@@ -5,29 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/House/DeleteView.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/favicon3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/img/MHlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/aboutStyles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/dataSources/ea42a561-260b-4d35-81b4-fe195c41313b.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Database/DBHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Database/DBHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Database/MHContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Database/MHContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Docs/AdminDocs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Docs/AdminDocs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Models/HouseImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Models/HouseImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/House/HouseView.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/House/HouseView.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/favicon2.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/database/mh.db" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/database/mh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/Microsoft.Data.SqlClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/System.Runtime.Caching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/System.Runtime.Caching.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/alpine-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-arm/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-arm64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-armel/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-mips64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-musl-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-x64/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-x86/native/libe_sqlite3.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/osx-x64/native/libe_sqlite3.dylib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm64/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x64/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x86/native/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/database/mh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/database/mh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/favicon.ico" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +89,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/MultiHouse/appsettings.Development.json" />
       <option value="$PROJECT_DIR$/MultiHouse/appsettings.json" />
       <option value="$PROJECT_DIR$/MultiHouse/Pages/Admin/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Pages/House/Index.cshtml" />
@@ -117,10 +135,11 @@
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/HouseView.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/aboutStyles.css" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mcV2qgifkYzYdOtf8wlSQaiEFu" />
@@ -142,7 +161,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.MultiHouse">
+  <component name="RunManager" selected="Publish to folder.Publish MultiHouse to folder (4)">
     <configuration name="Publish MultiHouse to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
       <riderPublish runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
       <method v="2" />
@@ -155,8 +174,8 @@
       <riderPublish target_folder="B:/inetpub" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
       <method v="2" />
     </configuration>
-    <configuration name="Publish MultiHouse to folder" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
-      <riderPublish runtime="win-x64" target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
+    <configuration name="Publish MultiHouse to folder (4)" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
+      <riderPublish runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
       <method v="2" />
     </configuration>
     <configuration name="Publish MultiHouse to custom server" type="DotNetPublishAndUpload" factoryName="Publish to custom server" temporary="true">
@@ -195,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Publish to folder.Publish MultiHouse to folder (4)" />
         <item itemvalue="Publish to folder.Publish MultiHouse to folder (3)" />
         <item itemvalue="Publish to folder.Publish MultiHouse to folder (2)" />
         <item itemvalue="Publish to custom server.Publish MultiHouse to custom server" />
         <item itemvalue="Publish to folder.Publish MultiHouse to folder (1)" />
-        <item itemvalue="Publish to folder.Publish MultiHouse to folder" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +258,7 @@
       <workItem from="1611695429898" duration="895000" />
       <workItem from="1611696918729" duration="1201000" />
       <workItem from="1611744903520" duration="5281000" />
-      <workItem from="1611850300579" duration="8740000" />
+      <workItem from="1611850300579" duration="11616000" />
     </task>
     <servers />
   </component>
