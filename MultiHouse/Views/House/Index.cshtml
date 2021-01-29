@@ -23,14 +23,14 @@
             <form method="get" action="">
               
               <div class="col-6">
-                <input name="Search" class="form-control" placeholder="поиск..." type="text"/>
+                <input name="Search" class="form-control min-inp-width" placeholder="поиск..." type="text"/>
                 
               </div>
               
 
-              <div class="col-2">
-                <span>кол-во комнат:</span>
-                <input name="RoomCount" list="RoomCount" class="form-control" type="text" placeholder="число"/>
+              <div class="col-2 min-inp-width">
+                <span class="min-inp-width">кол-во комнат:</span>
+                <input name="RoomCount" list="RoomCount" class="form-control number-input" type="text" placeholder="число"/>
                 
                 <datalist id="RoomCount">
                   <option>1</option>
@@ -45,22 +45,37 @@
 
               </div>
 
+              @* <div class="col"> *@
+              @*   <div class="input-group mb-3"> *@
+              @*     <div class="input-group-text"> *@
+              @*       <input name="IsBuying" class="form-check-input" style="margin-left: 0px;margin-right: 0px;" type="checkbox" value="" aria-label="Checkbox for following text input"> *@
+              @*     </div> *@
+              @*     <span>продажа</span> *@
+              @*   </div> *@
+              @* *@
+              @*   <div class="input-group mb-3"> *@
+              @*     <div class="input-group-text"> *@
+              @*       <input name="IsRenting" class="form-check-input" style="margin-left: 0px;margin-right: 0px;" type="checkbox" value="" aria-label="Checkbox for following text input"> *@
+              @*     </div> *@
+              @*     <span>аренда</span> *@
+              @*   </div> *@
+              @*    *@
+              @* </div> *@
+              
               <div class="col">
+                <br/>
                 <div class="input-group mb-3">
-                  <div class="input-group-text">
-                    <input name="IsBuying" class="form-check-input" style="margin-left: 0px;margin-right: 0px;" type="checkbox" value="" aria-label="Checkbox for following text input">
-                  </div>
-                  <span>продажа</span>
+                  <input type="checkbox" id="my"/>
+                  <label for="my"> аренда </label>
                 </div>
-
                 <div class="input-group mb-3">
-                  <div class="input-group-text">
-                    <input name="IsRenting" class="form-check-input" style="margin-left: 0px;margin-right: 0px;" type="checkbox" value="" aria-label="Checkbox for following text input">
-                  </div>
-                  <span>аренда</span>
+                  <input type="checkbox" id="my2"/>
+                  <label for="my2"> продажа </label>
                 </div>
-                
               </div>
+              
+              
+              
 
               
 
@@ -111,7 +126,9 @@
         <!-- Call to Action Section -->
         <div class="row mb-4">
           <div class="col-md-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+            <p>
+              На данный момент сайт пока еще находится в разработке
+            </p>
           </div>
         </div>
     

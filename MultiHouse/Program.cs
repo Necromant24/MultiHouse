@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using MultiHouse.Controllers;
 using MultiHouse.Database;
 using MultiHouse.Helpers;
+using MultiHouse.Models;
 
 namespace MultiHouse
 {
@@ -20,6 +21,12 @@ namespace MultiHouse
     {
         public static void Main(string[] args)
         {
+
+
+            AboutController.AboutModel = About.Load();
+            
+            
+            
             var host = CreateHostBuilder(args).Build();
 
             PersonalData.AuthToken = Guid.NewGuid().ToString();

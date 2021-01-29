@@ -1,4 +1,4 @@
-@model dynamic
+@model About
 
 @{
     ViewBag.Title = "title";
@@ -36,24 +36,24 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://thumbs.dreamstime.com/z/%D0%B3%D0%BB%D0%B0%D0%B7-%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D0%B7%D0%B8%D0%B8-%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%B0-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2-148944837.jpg" class="d-block w-100" alt="...">
+                <img src="img/About/img1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  
+                  <p>@Model.Label1</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://thumbs.dreamstime.com/z/%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD-s-%D0%BF%D0%BE%D0%B4%D0%B7%D0%B5%D0%BC%D0%B5%D0%BB%D1%8C%D1%8F-20599661.jpg" class="d-block w-100" alt="...">
+                <img src="img/About/img2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  
+                  <p>@Model.Label2</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://thumbs.dreamstime.com/z/%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BB%D0%B0%D0%BD%D0%B4%D1%88%D0%B0%D1%84%D1%82%D0%B0-%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D0%B7%D0%B8%D0%B8-%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2-%D0%B3%D0%BE%D1%80%D0%B8%D0%B7%D0%BE%D0%BD%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D1%81-%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%BC-147275635.jpg" class="d-block w-100" alt="...">
+                <img src="img/About/img3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                  
+                  <p>@Model.Label3</p>
                 </div>
               </div>
             </div>
@@ -70,18 +70,11 @@
       </div>
       <div align="center" class="col">
         <h4 align="center">
-          О Нас
+          @Model.Head
         </h4>
         
         <p id="about">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
-
+         @Model.Text
         </p>
         
                   

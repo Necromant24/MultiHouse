@@ -5,48 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/aboutStyles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/About.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/About/Redact.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/inputs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/database/About.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/database/mh.db" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/database/mh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/Microsoft.Data.SqlClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/Microsoft.Data.SqlClient.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.runtimeconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/System.Runtime.Caching.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/System.Runtime.Caching.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/alpine-x64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-arm/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-arm64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-armel/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-mips64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-musl-x64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-x64/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/linux-x86/native/libe_sqlite3.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/osx-x64/native/libe_sqlite3.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm/native/e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-arm64/native/e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x64/native/e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win-x86/native/e_sqlite3.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/web.config" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/web.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/database/mh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/database/mh.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +37,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4DE09D1C-B02A-429F-99E6-64C4C111036E/1A/EndpointRoutingMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/92CF8B41-CB00-4112-BC90-A410DD26CD6C/13/StaticFileMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACA3ABD9-4C1C-494E-9372-D28E9AE55857/11/DeveloperExceptionPageMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACA3ABD9-4C1C-494E-9372-D28E9AE55857/1E/ErrorPage.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04924406-BACA-48B4-9254-8097E2E1D035/E/Controller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ABD8126B-966E-414A-9571-A6B06E3B4A28/5/ObjectMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ACA3ABD9-4C1C-494E-9372-D28E9AE55857/B/BaseView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/394/FileStream.Windows.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9EB03921-4530-45BA-8326-246552B6EE0C/1/HostFilteringMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/37/Object.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D2B0EF7B-A8C3-4AF1-95CC-501C0131D7BA/C/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/409/Collection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/3E/String.Comparison.cs" root0="SKIP_HIGHLIGHTING" />
@@ -78,24 +61,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1D5/TaskContinuation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26B86A96-43D2-417A-8D83-30B1F2C4A06D/3A/SmtpClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/1B2/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/04924406-BACA-48B4-9254-8097E2E1D035/E/Controller.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ABD8126B-966E-414A-9571-A6B06E3B4A28/5/ObjectMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/2C2/AsyncTaskMethodBuilderT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ABD8126B-966E-414A-9571-A6B06E3B4A28/38/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D2B0EF7B-A8C3-4AF1-95CC-501C0131D7BA/A/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/2C002A74-B0B2-4A2F-930C-2E94672A05AD/4A/RelationalCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/26B86A96-43D2-417A-8D83-30B1F2C4A06D/0/MediaTypeNames.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/F3DD31A3-D437-4D7D-9525-D887480DAE95/37/Object.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/MultiHouse/appsettings.json" />
-      <option value="$PROJECT_DIR$/MultiHouse/Pages/Admin/Index.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Pages/House/Index.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutAdminMH.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/carousel.css" />
-      <option value="$PROJECT_DIR$/MultiHouse/Models/House.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/ImgPostfix.txt" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/MainImgPostfix.txt" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/Index.cshtml" />
@@ -123,23 +96,30 @@
       <option value="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/PasswordSetView.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/.gitignore" />
       <option value="$PROJECT_DIR$/MultiHouse/Startup.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/MHContext.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseImage.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/DBHelper.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/DeleteView.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Docs/AdminDocs.txt" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/HouseView.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/AdminController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/EmailSetView.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/aboutStyles.css" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/.gitignore" />
+      <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/checkboxes.css" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/inputs.css" />
+      <option value="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/wwwroot/database/About.json" />
+      <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/About/Redact.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Models/About.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mcV2qgifkYzYdOtf8wlSQaiEFu" />
@@ -161,7 +141,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Publish to folder.Publish MultiHouse to folder (4)">
+  <component name="RunManager" selected=".NET Launch Settings Profile.MultiHouse">
     <configuration name="Publish MultiHouse to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
       <riderPublish runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
       <method v="2" />
@@ -258,7 +238,8 @@
       <workItem from="1611695429898" duration="895000" />
       <workItem from="1611696918729" duration="1201000" />
       <workItem from="1611744903520" duration="5281000" />
-      <workItem from="1611850300579" duration="11616000" />
+      <workItem from="1611850300579" duration="11969000" />
+      <workItem from="1611916771667" duration="8748000" />
     </task>
     <servers />
   </component>
@@ -338,17 +319,30 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/MultiHouse/Database/DBHelper.cs</url>
-          <line>12</line>
-          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Database\DBHelper.cs" initialLine="12" containingFunctionPresentation="method 'InsertTestData'">
+          <url>file://$PROJECT_DIR$/MultiHouse/Models/About.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Models\About.cs" initialLine="20" containingFunctionPresentation="method 'Save'">
             <startOffsets>
-              <option value="260" />
+              <option value="504" />
             </startOffsets>
             <endOffsets>
-              <option value="303" />
+              <option value="527" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Controllers\AboutController.cs" initialLine="23" containingFunctionPresentation="method 'Redact'">
+            <startOffsets>
+              <option value="893" />
+            </startOffsets>
+            <endOffsets>
+              <option value="906" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

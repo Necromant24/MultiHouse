@@ -18,6 +18,7 @@
           <e p="RequestController.cs" t="Include" />
         </e>
         <e p="Database" t="Include">
+          <e p="About.json" t="Include" />
           <e p="DBHelper.cs" t="Include" />
           <e p="MHContext.cs" t="Include" />
           <e p="PersonalData.cs" t="Include" />
@@ -29,6 +30,7 @@
           <e p="DataHelper.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="About.cs" t="Include" />
           <e p="EmailData.cs" t="Include" />
           <e p="House.cs" t="Include" />
           <e p="HouseImage.cs" t="Include" />
@@ -57,6 +59,7 @@
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="About" t="Include">
             <e p="Index.cshtml" t="Include" />
+            <e p="Redact.cshtml" t="Include" />
           </e>
           <e p="Admin" t="Include">
             <e p="EmailSetView.cshtml" t="Include" />
@@ -84,19 +87,27 @@
         <e p="wwwroot" t="Include">
           <e p="css" t="Include">
             <e p="aboutStyles.css" t="Include" />
+            <e p="checkboxes.css" t="Include" />
             <e p="houseView.css" t="Include" />
+            <e p="inputs.css" t="Include" />
             <e p="mainPage.css" t="Include" />
             <e p="site.css" t="Include" />
             <e p="styles.css" t="Include" />
             <e p="styles2.css" t="Include" />
           </e>
           <e p="Database" t="Include">
+            <e p="About.json" t="Include" />
             <e p="mh.db" t="Include" />
           </e>
           <e p="favicon.png" t="Include" />
           <e p="favicon2.ico" t="Include" />
           <e p="favicon3.png" t="Include" />
           <e p="img" t="Include">
+            <e p="About" t="Include">
+              <e p="img1.jpg" t="Include" />
+              <e p="img2.jpg" t="Include" />
+              <e p="img3.jpg" t="Include" />
+            </e>
             <e p="houses" t="Include">
               <e p="imgs" t="Include">
                 <e p="h0.jpg" t="Include" />

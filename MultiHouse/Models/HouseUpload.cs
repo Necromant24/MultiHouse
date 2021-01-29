@@ -11,7 +11,7 @@ namespace MultiHouse.Models
         public string IsBuying { get; set; }
         // заставка на иконке в списке на главной
         public IFormFile MainImg { get; set; }
-        
-        public IFormFile[] Images { get; set; }
+
+        public IFormFile[] Images { get; set; } = new IFormFile[0];
     }
 }

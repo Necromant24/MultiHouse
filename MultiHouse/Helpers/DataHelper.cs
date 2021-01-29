@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.Http;
 using MultiHouse.Controllers;
 using MultiHouse.Database;
 using MultiHouse.Models;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Formats;
+using SixLabors.ImageSharp.Formats.Jpeg;
+using SixLabors.ImageSharp.Processing;
 
 namespace MultiHouse.Helpers
 {
@@ -19,6 +23,14 @@ namespace MultiHouse.Helpers
                 HouseController.imgPostfix = 0;
             }
             
+        }
+        
+        public static void SaveWebImage(string savePath,IFormFile file)
+        {
+            var fs = file.OpenReadStream();
+            Image img = Image.Load(fs);
+            fs.Close();
+            img.Save(savePath);
         }
 
         public static House HUploadToHouse(HouseUpload houseUpload)
