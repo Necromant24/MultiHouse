@@ -51,6 +51,23 @@ namespace MultiHouse.Controllers
             {
                 requests = requests.Where(x => x.Status == filter.Status);
             }
+
+            if (filter.UserName != null && filter.UserName != "")
+            {
+                requests = requests.Where(x =>
+                    (x.FirstName + " " + x.LastName + " " + x.Patronymic).Contains(filter.UserName));
+            }
+
+
+            if (filter.ExcludeChecked != "" && filter.ExcludeChecked != null)
+            {
+                requests = requests.Where(x => x.Status != "проверено");
+            }
+
+            if (filter.Exclude != "" && filter.Exclude != null)
+            {
+                requests = requests.Where(x => x.Status != filter.Exclude);
+            }
             
             
             

@@ -5,21 +5,800 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Models/About.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/Views/About/Redact.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/css/inputs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/database/About.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/img/logoMH2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/logoMH2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/svgs/instagram-square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/svgs/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/svgs/vk.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/MultiHouse.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MultiHouse/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Models/RequestsFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Models/RequestsFilter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/database/mh.db" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/database/mh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Antiforgery.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Authentication.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Authentication.Cookies.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Authentication.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Authentication.OAuth.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Authentication.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Authorization.Policy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Authorization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Components.Authorization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Components.Forms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Components.Server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Components.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Components.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Connections.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.CookiePolicy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Cors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.DataProtection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.DataProtection.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.DataProtection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Diagnostics.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Diagnostics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.HostFiltering.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Hosting.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Html.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Http.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Http.Connections.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Http.Connections.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Http.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Http.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.HttpOverrides.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.HttpsPolicy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Identity.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Localization.Routing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Localization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Metadata.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.ApiExplorer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Cors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.DataAnnotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Formatters.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Localization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.RazorPages.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.TagHelpers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.ViewFeatures.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Razor.Language.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Razor.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.ResponseCaching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.ResponseCompression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Rewrite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Routing.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Routing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Server.HttpSys.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Server.IIS.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Server.IISIntegration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Server.Kestrel.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Server.Kestrel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.Session.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.SignalR.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.SignalR.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.SignalR.Protocols.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.SignalR.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.StaticFiles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.WebSockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.WebUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.AspNetCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.CodeAnalysis.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.CodeAnalysis.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Data.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.DiaSymReader.Native.amd64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.DotNet.PlatformAbstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.EntityFrameworkCore.Sqlite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.CommandLine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.EnvironmentVariables.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.FileExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.Ini.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.KeyPerFile.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.UserSecrets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Diagnostics.HealthChecks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.FileProviders.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.FileProviders.Composite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.FileProviders.Embedded.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.FileProviders.Physical.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.FileSystemGlobbing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Hosting.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Localization.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Localization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.Console.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.Debug.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.EventLog.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.EventSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.TraceSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.ObjectPool.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Options.ConfigurationExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Options.DataAnnotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Options.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Extensions.WebEncoders.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.JSInterop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Net.Http.Headers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.VisualBasic.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.VisualBasic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Win32.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Win32.Registry.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/MultiHouse.Views.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/MultiHouse.Views.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/MultiHouse.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/MultiHouse.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/MultiHouse.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/MultiHouse.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/MultiHouse.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/SQLitePCLRaw.batteries_v2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/SQLitePCLRaw.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/SQLitePCLRaw.nativelibrary.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/SQLitePCLRaw.provider.dynamic_cdecl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/SixLabors.ImageSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.AppContext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Collections.Concurrent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Collections.NonGeneric.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Collections.Specialized.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Collections.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ComponentModel.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ComponentModel.DataAnnotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ComponentModel.EventBasedAsync.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ComponentModel.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ComponentModel.TypeConverter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ComponentModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Console.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Data.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Data.DataSetExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.Debug.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.EventLog.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.FileVersionInfo.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.Process.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.StackTrace.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.TextWriterTraceListener.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.Tools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.TraceSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Diagnostics.Tracing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Drawing.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Drawing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Dynamic.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Formats.Asn1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Globalization.Calendars.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Globalization.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Globalization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.Compression.Brotli.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.Compression.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.Compression.ZipFile.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.Compression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.FileSystem.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.FileSystem.DriveInfo.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.FileSystem.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.FileSystem.Watcher.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.IsolatedStorage.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.MemoryMappedFiles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.Pipelines.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.Pipes.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.Pipes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.UnmanagedMemoryStream.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IO.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Linq.Expressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Linq.Parallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Linq.Queryable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Http.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.HttpListener.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Mail.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.NameResolution.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.NetworkInformation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Ping.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Requests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.ServicePoint.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.Sockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.WebClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.WebHeaderCollection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.WebProxy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.WebSockets.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.WebSockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Numerics.Vectors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ObjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Private.CoreLib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Private.DataContractSerialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Private.Uri.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Private.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Private.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.DispatchProxy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.Emit.ILGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.Emit.Lightweight.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.Emit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.Metadata.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.TypeExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Reflection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Resources.Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Resources.ResourceManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Resources.Writer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.CompilerServices.VisualC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Handles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.InteropServices.RuntimeInformation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.InteropServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Intrinsics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Loader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Serialization.Formatters.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Serialization.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Serialization.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Serialization.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Claims.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.Algorithms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.Cng.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.Csp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.Encoding.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.OpenSsl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.Pkcs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.X509Certificates.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Cryptography.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Principal.Windows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.Principal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.SecureString.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ServiceModel.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ServiceProcess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Text.Encoding.CodePages.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Text.Encoding.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Text.Encoding.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Text.Encodings.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Text.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Text.RegularExpressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Channels.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Overlapped.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Tasks.Dataflow.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Tasks.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Tasks.Parallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Tasks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Thread.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.ThreadPool.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.Timer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Threading.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Transactions.Local.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Transactions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.ValueTuple.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Web.HttpUtility.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Windows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.ReaderWriter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.XPath.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.XPath.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.XmlDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.XmlSerializer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/System.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/WindowsBase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-console-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-console-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-datetime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-debug-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-errorhandling-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-file-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-file-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-file-l2-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-handle-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-interlocked-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-libraryloader-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-localization-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-memory-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-namedpipe-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-processenvironment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-processthreads-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-processthreads-l1-1-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-profile-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-rtlsupport-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-synch-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-synch-l1-2-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-sysinfo-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-timezone-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-core-util-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-conio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-convert-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-environment-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-filesystem-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-heap-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-locale-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-math-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-multibyte-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-private-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-process-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-runtime-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-stdio-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-string-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-time-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/api-ms-win-crt-utility-l1-1-0.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/aspnetcorev2_inprocess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/clrcompression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/clretwrc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/clrjit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/coreclr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/createdump.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/dbgshim.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/e_sqlite3.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/hostfxr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/hostpolicy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/mscordaccore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/mscordaccore_amd64_amd64_5.0.20.51904.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/mscordbi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/mscorlib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/mscorrc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/netstandard.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Antiforgery.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Authentication.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Authentication.Cookies.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Authentication.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Authentication.OAuth.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Authentication.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Authorization.Policy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Authorization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Components.Authorization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Components.Forms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Components.Server.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Components.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Components.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Connections.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.CookiePolicy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Cors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.DataProtection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.DataProtection.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.DataProtection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Diagnostics.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Diagnostics.HealthChecks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Diagnostics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.HostFiltering.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Hosting.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Html.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Http.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Http.Connections.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Http.Connections.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Http.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Http.Features.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.HttpOverrides.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.HttpsPolicy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Identity.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Localization.Routing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Localization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Metadata.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.ApiExplorer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.Cors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.DataAnnotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.Formatters.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.Localization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.RazorPages.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.TagHelpers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.ViewFeatures.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Mvc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Razor.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Razor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.ResponseCaching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.ResponseCompression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Rewrite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Routing.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Routing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Server.HttpSys.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Server.IIS.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Server.IISIntegration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Server.Kestrel.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Server.Kestrel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.Session.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.SignalR.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.SignalR.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.SignalR.Protocols.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.SignalR.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.StaticFiles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.WebSockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.WebUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.AspNetCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.CommandLine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.EnvironmentVariables.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.FileExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.Ini.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.KeyPerFile.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.UserSecrets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Diagnostics.HealthChecks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.FileProviders.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.FileProviders.Composite.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.FileProviders.Embedded.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.FileProviders.Physical.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.FileSystemGlobbing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Hosting.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Hosting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Localization.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Localization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.Console.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.Debug.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.EventLog.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.EventSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.TraceSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.ObjectPool.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Options.ConfigurationExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Options.DataAnnotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Options.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Extensions.WebEncoders.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.JSInterop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Net.Http.Headers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.VisualBasic.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.VisualBasic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Win32.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/Microsoft.Win32.Registry.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.AppContext.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Buffers.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Collections.Concurrent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Collections.NonGeneric.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Collections.Specialized.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Collections.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ComponentModel.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ComponentModel.DataAnnotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ComponentModel.EventBasedAsync.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ComponentModel.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ComponentModel.TypeConverter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ComponentModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Console.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Data.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Data.DataSetExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.Contracts.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.Debug.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.EventLog.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.FileVersionInfo.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.Process.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.StackTrace.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.TextWriterTraceListener.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.Tools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.TraceSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Diagnostics.Tracing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Drawing.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Drawing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Dynamic.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Formats.Asn1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Globalization.Calendars.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Globalization.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Globalization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.Compression.Brotli.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.Compression.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.Compression.ZipFile.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.Compression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.FileSystem.DriveInfo.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.FileSystem.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.FileSystem.Watcher.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.IsolatedStorage.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.MemoryMappedFiles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.Pipelines.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.Pipes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.UnmanagedMemoryStream.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.IO.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Linq.Expressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Linq.Parallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Linq.Queryable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Http.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.HttpListener.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Mail.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.NameResolution.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.NetworkInformation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Ping.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Requests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.ServicePoint.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.Sockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.WebClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.WebHeaderCollection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.WebProxy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.WebSockets.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.WebSockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Net.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Numerics.Vectors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ObjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.DispatchProxy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.Emit.ILGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.Emit.Lightweight.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.Emit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.Metadata.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.TypeExtensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Reflection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Resources.Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Resources.ResourceManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Resources.Writer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.CompilerServices.Unsafe.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.CompilerServices.VisualC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Handles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.InteropServices.RuntimeInformation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.InteropServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Intrinsics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Loader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Serialization.Formatters.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Serialization.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Serialization.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Serialization.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Claims.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Cryptography.Algorithms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Cryptography.Cng.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Cryptography.Csp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Cryptography.Encoding.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Cryptography.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Cryptography.X509Certificates.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Cryptography.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Principal.Windows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.Principal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.SecureString.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ServiceModel.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ServiceProcess.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Text.Encoding.CodePages.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Text.Encoding.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Text.Encoding.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Text.Encodings.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Text.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Text.RegularExpressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Channels.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Overlapped.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Tasks.Dataflow.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Tasks.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Tasks.Parallel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Tasks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Thread.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.ThreadPool.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.Timer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Threading.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Transactions.Local.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Transactions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.ValueTuple.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Web.HttpUtility.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Windows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.ReaderWriter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.XPath.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.XPath.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.XmlDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.XmlSerializer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/System.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/WindowsBase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/mscorlib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/refs/netstandard.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/ucrtbase.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/css/aboutStyles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/css/houseView.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/css/mainPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/css/styles2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/database/mh.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/favicon2.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/favicon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/MHlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/imgs/h9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/h0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/h1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/h2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/h3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/h4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/h5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/h6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/house10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/house16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/houses/mainImg/house5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/logoMH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/logoza.ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/img/nophoto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish — копия/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Publish.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,9 +862,6 @@
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Models/RequestsFilter.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/RequestView.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseSearch.cs" />
@@ -94,7 +870,6 @@
       <option value="$PROJECT_DIR$/MultiHouse/Models/PasswordData.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/EmailData.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/PersonalData.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/PasswordSetView.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Startup.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Database/MHContext.cs" />
@@ -109,17 +884,21 @@
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/aboutStyles.css" />
       <option value="$PROJECT_DIR$/MultiHouse/.gitignore" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/checkboxes.css" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/inputs.css" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/database/About.json" />
       <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/About/Redact.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/About.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/AboutController.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Shared/_LayoutMH2.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/About/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Models/RequestsFilter.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Index.cshtml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mcV2qgifkYzYdOtf8wlSQaiEFu" />
@@ -142,10 +921,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.MultiHouse">
-    <configuration name="Publish MultiHouse to folder (1)" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
-      <riderPublish runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
-      <method v="2" />
-    </configuration>
     <configuration name="Publish MultiHouse to folder (2)" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
       <riderPublish target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
       <method v="2" />
@@ -156,6 +931,10 @@
     </configuration>
     <configuration name="Publish MultiHouse to folder (4)" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
       <riderPublish runtime="win-x64" self_contained="true" target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Publish MultiHouse to folder" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
+      <riderPublish uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
       <method v="2" />
     </configuration>
     <configuration name="Publish MultiHouse to custom server" type="DotNetPublishAndUpload" factoryName="Publish to custom server" temporary="true">
@@ -195,10 +974,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Publish to folder.Publish MultiHouse to folder (4)" />
+        <item itemvalue="Publish to folder.Publish MultiHouse to folder" />
         <item itemvalue="Publish to folder.Publish MultiHouse to folder (3)" />
         <item itemvalue="Publish to folder.Publish MultiHouse to folder (2)" />
         <item itemvalue="Publish to custom server.Publish MultiHouse to custom server" />
-        <item itemvalue="Publish to folder.Publish MultiHouse to folder (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -239,7 +1018,9 @@
       <workItem from="1611696918729" duration="1201000" />
       <workItem from="1611744903520" duration="5281000" />
       <workItem from="1611850300579" duration="11969000" />
-      <workItem from="1611916771667" duration="8748000" />
+      <workItem from="1611916771667" duration="11257000" />
+      <workItem from="1612003435842" duration="4155000" />
+      <workItem from="1612109685408" duration="6486000" />
     </task>
     <servers />
   </component>

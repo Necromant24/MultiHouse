@@ -1,3 +1,4 @@
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 namespace MultiHouse.Models
@@ -23,9 +24,13 @@ namespace MultiHouse.Models
         public string EmailAddress { get; set; }
 
         // not checked || checked || in progress
-        public string Status { get; set; } = "not checked";
+        public string Status { get; set; } = "не проверено";
         [AllowNull]
         public int? HouseId { get; set; }
+        
+        
+        // TODO: add this
+        // public DateTime Date{get;set}
 
 
     }

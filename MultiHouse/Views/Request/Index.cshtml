@@ -8,9 +8,15 @@
 <div>
     <div>
         <form action="/Request/RequestsView" method="get">
-            <input name="Status" list="statuses" />
-            <input type="submit" value="отфильтровать" />
-            
+            <input name="userName" placeholder="имя клиента" />
+            <input name="Status" list="statuses" placeholder="status"/>
+            <span>
+                исключить проверенные
+            </span>
+            <input name="ExcludeChecked" type="checkbox" />
+            <input name="Exclude" list="statuses" placeholder="исключить ..."  />
+            <input type="submit" value="отфильтровать"/>
+
             <datalist id="statuses">
                 <option>не проверено</option>
                 <option>проверено</option>
@@ -18,6 +24,9 @@
                 <option>в приоритете обработки</option>
                 <option>в большем приоритете обработки</option>
             </datalist>
+            
+            
+            
         </form>
     </div>
     
