@@ -58,9 +58,30 @@ namespace MultiHouse.Controllers
                                            x.Description.Contains(houseSearch.Search));
             }
 
-            if (houseSearch.RoomCount != null && houseSearch.RoomCount!=0)
+            if (houseSearch.RoomCount != null && houseSearch.RoomCount!="")
             {
-                houses = houses.Where(x => x.RoomCount == houseSearch.RoomCount);
+                //houses = houses.Where(x => x.RoomCount == houseSearch.RoomCount);
+
+                int rcount = 0;
+                bool isNum = int.TryParse(((string?)houseSearch.RoomCount),out rcount);
+
+                if (isNum)
+                {
+                    houses = houses.Where(x => x.RoomCount == rcount);
+                }
+                else
+                {
+                    if (houseSearch.RoomCount == "Студия")
+                    {
+                        houses = houses.Where(x => x.RoomCount == 0);
+                    }
+                    else if (houseSearch.RoomCount == "4+")
+                    {
+                        houses = houses.Where(x => x.RoomCount >= 4);
+                    }
+                }
+                
+
             }
 
             if (houseSearch.IsBuying == "on")

@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MultiHouse.Database;
@@ -115,15 +116,25 @@ namespace MultiHouse.Controllers
             if (houseRequest.EmailAddress != null && houseRequest.EmailAddress != "")
             {
                 SendMail("smtp.gmail.com", PersonalData.EmailAddress, PersonalData.EMailPassword, houseRequest.EmailAddress,
-                    "Уведомление об успешной подачи заявки в сервисе MultiHouse", "Ваша заявка принята, с вами свяжутся позднее", null);
+                    "Уведомление об успешной подачи заявки в сервисе MultiHouse",
+                    "Благодарим за обращение, с вами свяжутся в ближайшее время", null);
 
             }
             
             
             _context.HousesRequests.Add(houseRequest);
             _context.SaveChanges();
-
-            ViewData["status"] = "заявка принята, проверьте почту";
+            
+            if (houseRequest.EmailAddress!=null && houseRequest.EmailAddress!="")
+            {
+                ViewData["status"] = "заявка принята, проверьте почту";
+            }
+            else
+            {
+                ViewData["status"] = "заявка принята, с вами свяжутся позднее";
+            }
+            
+            
             
             return View(new HouseRequest());
         }

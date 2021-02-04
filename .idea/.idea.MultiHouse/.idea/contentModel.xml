@@ -55,6 +55,7 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="t.txt" t="Include" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="About" t="Include">
@@ -96,8 +97,9 @@
             <e p="styles2.css" t="Include" />
           </e>
           <e p="Database" t="Include">
-            <e p="About.json" t="Include" />
             <e p="mh.db" t="Include" />
+            <e p="mh1.db" t="Include" />
+            <e p="mh2.db" t="Include" />
           </e>
           <e p="favicon.png" t="Include" />
           <e p="favicon2.ico" t="Include" />
