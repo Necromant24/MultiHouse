@@ -2,4 +2,41 @@
 
 
 
+    @media all and (min-width: 501px){
+        .mh-nav-grid{
+            display: grid;
+            grid-template:  "logo tel";
+            
+        }
+        
+        .h-hidden-block{
+            height: 5px;
+        }
+        
+        
+    }
+
+    @media all and (max-width: 500px){
+        .mh-nav-grid{
+            display: grid;
+            grid-template: "logo" "tel";
+
+        }
+
+        .h-hidden-block{
+            height: 30px;
+        }
+        
+        
+    }
+    
+.flexbox{
+    display: flex;
+}
+    
+    
+
+
+
+
 

@@ -50,13 +50,27 @@ namespace MultiHouse.Controllers
         public IActionResult Index([FromQuery]HouseSearch houseSearch)
         {
             var houses = _context.Houses2.Select(x => x);
-            
 
-            if (houseSearch.Search != null)
-            {
-                houses = houses.Where(x => x.Address.Contains(houseSearch.Search) ||
-                                           x.Description.Contains(houseSearch.Search));
-            }
+            
+            // if (houseSearch.Search != null)
+            // {
+            //     var keyWords = houseSearch.Search.Split(' ');
+            //     foreach (var word in keyWords)
+            //     {
+            //         if (word != "" && word != " ")
+            //         {
+            //             houses = houses.Concat(houses.Where(x=>x.Address.Contains(word) ||
+            //                                           x.Description.Contains(word)));
+            //         }
+            //         
+            //     }
+            // }
+
+            // if (houseSearch.Search != null)
+            // {
+            //     houses = houses.Where(x => x.Address.Contains(houseSearch.Search) ||
+            //                                x.Description.Contains(houseSearch.Search));
+            // }
 
             if (houseSearch.RoomCount != null && houseSearch.RoomCount!="")
             {
@@ -93,10 +107,39 @@ namespace MultiHouse.Controllers
             {
                 houses = houses.Where(x => x.IsRenting == houseSearch.IsRenting);
             }
+
+
+            var houseList = new List<House>();
+
+            
+            if (houseSearch.Search != null)
+            {
+                var keyWords = houseSearch.Search.Split(' ');
+
+                foreach (var word in keyWords)
+                {
+                    houseList.AddRange( houses.Where(x => x.Address.Contains(word) ||
+                                               x.Description.Contains(word)).ToList());
+                }
+
+                if (keyWords.Length > 1)
+                {
+                    HashSet<House> houseSet = new HashSet<House>(houseList);
+                    houseList = houseSet.ToList();
+                }
+                
+            }
+            else
+            {
+                houseList = houses.ToList();
+            }
+
+            
+            
             
             ViewData["layout"] = selectLayout(HttpContext);
             
-            return View(houses.ToList());
+            return View(houseList);
         }
 
         public IActionResult Create()
@@ -206,9 +249,21 @@ namespace MultiHouse.Controllers
             _context.SaveChanges();
 
             ++mainImgPostfix;
+            
+            DataHelper.SavePosfixes((int)mainImgPostfix,(int)imgPostfix);
 
             return Redirect("/House/Create");
         }
+
+
+
+        
+        
+        
+        
+        
+        
+        
 
 
 
@@ -226,13 +281,13 @@ namespace MultiHouse.Controllers
             
             var fs = file.OpenReadStream();
 
-            IImageDecoder decoder = new JpegDecoder();
+            //IImageDecoder decoder = new JpegDecoder();
 
-            Image img = Image.Load(fs,decoder);
+            Image img = Image.Load(fs);
 
             fs.Close();
             
-            img.Mutate(x => x.Resize(252, 138));
+            img.Mutate(x => x.Resize(252*2, 138*2));
             
             img.Save(savePath+name);
         }

@@ -70,9 +70,13 @@ namespace MultiHouse
                     //context.SaveChanges();
 
                     bool connected = context.Database.CanConnect();
+
+                    using (var ctx = new MHContext())
+                    {
+                        ctx.Database.EnsureCreated();
+                    }
                     
-                    
-                    DBHelper.InsertTestData(context);
+                    //DBHelper.InsertTestData(context);
                 
             }
         }

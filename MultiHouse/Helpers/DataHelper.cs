@@ -9,6 +9,7 @@ using Microsoft.Data.Sqlite;
 using MultiHouse.Controllers;
 using MultiHouse.Database;
 using MultiHouse.Models;
+using Newtonsoft.Json;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Formats;
 using SixLabors.ImageSharp.Formats.Jpeg;
@@ -17,19 +18,57 @@ using Timer = System.Timers.Timer;
 
 namespace MultiHouse.Helpers
 {
+    public class Postfixes
+    {
+        public int MainImgPostfix { get; set; }
+        public int ImgPostfix { get; set; }
+    }
+    
     public static class DataHelper
     {
 
+        
 
         public static void InitVariables()
         {
-            using (var ctx = new  MHContext())
+                string postfixesFile = "wwwroot/database/postfixes.json";
+                Postfixes postfixes = JsonConvert.DeserializeObject<Postfixes>(File.ReadAllText(postfixesFile));
+
+                if (postfixes != null)
+                {
+                    HouseController.imgPostfix = postfixes.ImgPostfix;
+                    HouseController.mainImgPostfix = postfixes.MainImgPostfix;
+                }
+                else
+                {
+                    HouseController.imgPostfix = 0;
+                    HouseController.mainImgPostfix = 0;
+                }
+                
+                
+                
+        }
+
+        public static Postfixes LoadPostfixes()
+        {
+            string postfixesFile = "wwwroot/database/postfixes.json";
+            return JsonConvert.DeserializeObject<Postfixes>(File.ReadAllText(postfixesFile));
+        }
+
+
+        public static void SavePosfixes(int mainPostfix, int posfix)
+        {
+            File.WriteAllText("wwwroot/database/postfixes.json",JsonConvert.SerializeObject(new Postfixes()
             {
-                HouseController.mainImgPostfix = 10;
-                HouseController.imgPostfix = 0;
-            }
+                MainImgPostfix = mainPostfix,
+                ImgPostfix = posfix
+            }));
             
         }
+        
+        
+        
+        
         
         public static void SaveWebImage(string savePath,IFormFile file)
         {
@@ -55,7 +94,7 @@ namespace MultiHouse.Helpers
             
             Thread.Sleep(minute*60*4);
 
-            Timer timer2 = new Timer(day/2);
+            Timer timer2 = new Timer(day/5);
 
             //timer.Interval = 1000 * 2;
             

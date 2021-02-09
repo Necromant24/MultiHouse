@@ -74,8 +74,54 @@ namespace MultiHouse.Controllers
             
             return View("Index",requests.ToList());
         }
-        
-        
+
+
+        public IActionResult DeleteView()
+        {
+            
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+            
+            
+            return View("Delete");
+        }
+
+
+        public IActionResult Delete()
+        {
+
+            bool authorized = Helpers.DataHelper.IsAdminAuthorized(HttpContext);
+
+            if (!authorized)
+            {
+                return Redirect("/Admin");
+            }
+
+            long requestId = Convert.ToInt64(Request.Form["requestId"]);
+            var request = _context.HousesRequests.FirstOrDefault(x => x.Id == requestId);
+
+            if (request != null)
+            {
+                _context.HousesRequests.Remove(request);
+                ViewData["status"] = "deleted id - " + request.Id 
+                                     + " user name = " + request.FirstName 
+                                     + " tel. - " + request.Phone;
+                
+                _context.SaveChanges();
+            }
+            else
+            {
+                ViewData["status"]="not found request";
+            }
+
+            
+
+            return View();
+        }
 
         public IActionResult RequestView(int id)
         {

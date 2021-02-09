@@ -55,7 +55,6 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="t.txt" t="Include" />
         <e p="Views" t="Include">
           <e p="_ViewImports.cshtml" t="Include" />
           <e p="About" t="Include">
@@ -76,6 +75,7 @@
           </e>
           <e p="Request" t="Include">
             <e p="Create.cshtml" t="Include" />
+            <e p="Delete.cshtml" t="Include" />
             <e p="Index.cshtml" t="Include" />
             <e p="RequestView.cshtml" t="Include" />
           </e>
@@ -100,6 +100,7 @@
             <e p="mh.db" t="Include" />
             <e p="mh1.db" t="Include" />
             <e p="mh2.db" t="Include" />
+            <e p="postfixes.json" t="Include" />
           </e>
           <e p="favicon.png" t="Include" />
           <e p="favicon2.ico" t="Include" />
@@ -114,30 +115,14 @@
               <e p="imgs" t="Include">
                 <e p="h0.jpg" t="Include" />
                 <e p="h1.jpg" t="Include" />
-                <e p="h10.jpg" t="Include" />
-                <e p="h11.jpg" t="Include" />
-                <e p="h12.jpg" t="Include" />
-                <e p="h13.jpg" t="Include" />
-                <e p="h15.jpg" t="Include" />
-                <e p="h16.jpg" t="Include" />
-                <e p="h17.jpg" t="Include" />
-                <e p="h18.jpg" t="Include" />
-                <e p="h2.jpg" t="Include" />
-                <e p="h8.jpg" t="Include" />
-                <e p="h9.jpg" t="Include" />
-              </e>
-              <e p="mainImg" t="Include">
-                <e p="h0.jpg" t="Include" />
-                <e p="h1.jpg" t="Include" />
                 <e p="h2.jpg" t="Include" />
                 <e p="h3.jpg" t="Include" />
                 <e p="h4.jpg" t="Include" />
                 <e p="h5.jpg" t="Include" />
-                <e p="h6.jpg" t="Include" />
-                <e p="house10.jpg" t="Include" />
-                <e p="house11.jpg" t="Include" />
-                <e p="house16.jpg" t="Include" />
-                <e p="house5.jpg" t="Include" />
+              </e>
+              <e p="mainImg" t="Include">
+                <e p="house0.jpg" t="Include" />
+                <e p="house1.jpg" t="Include" />
               </e>
             </e>
             <e p="logoMH.png" t="Include" />
@@ -208,6 +193,7 @@
             <e p="telegram.svg" t="Include" />
             <e p="vk.svg" t="Include" />
           </e>
+          <e p="tel.png" t="Include" />
         </e>
       </e>
       <e p="MultiHouse.sln" t="IncludeFlat" />

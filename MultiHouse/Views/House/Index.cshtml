@@ -15,8 +15,7 @@
     
         
     
-        <!-- Portfolio Section -->
-        <h2>Представляем доступные квартиры</h2>
+        <h2 style="margin-top: 5px">Представляем доступные квартиры</h2>
         
         <div class="container">
           <div>
@@ -28,7 +27,7 @@
               </div>
               
 
-              <div class="col-2 min-inp-width">
+              <div class="col-2 min-inp-width" style="min-width: 151px">
                 <span class="min-inp-width">кол-во комнат:</span>
                 <input name="RoomCount" list="RoomCount" class="form-control number-input" type="text" placeholder="число"/>
                 
@@ -91,6 +90,13 @@
     
         <div class="row">
           
+          @if (Model.Count == 0)
+          {
+            <h3 align="center" style="color: #545b62;">
+              обьявлений не найдено
+            </h3>
+          }
+
           @foreach (var house in @Model)
           {
             <div class="col-lg-4 col-sm-6 portfolio-item">
@@ -107,7 +113,7 @@
               </div>
             </div>
           }
-          
+
           <script type="text/javascript">
           
           function imgErrorHandler(img){
@@ -117,8 +123,8 @@
             }
           
           </script>
-          
-          
+
+
 
         </div>
         
@@ -128,23 +134,23 @@
 <footer>
   <div style="display: flex;">
     
-    <h4 class="media-icon">
+    <h4 style="margin: 5px">
       мы в соц-сетях: 
     </h4>
     
-    <div class="media-icon">
+    <div style="margin: 5px" >
       <a href="https://www.instagram.com/invites/contact/?i=1k4150ffz6c8b&utm_content=kzhyr48">
         <img width="30px" src="svgs/instagram-square.svg"/>
       </a>
     </div>
 
-    <div class="media-icon">
+    <div style="margin: 5px">
       <a href="https://vk.com/multihousepropertyspb">
         <img width="30px" src="svgs/vk.svg"/>
       </a>
     </div>
 
-    <div class="media-icon">
+    <div style="margin: 5px">
       <a href="https://t.me/multihouse_world">
         <img width="30px" src="svgs/telegram.svg" />
       </a>
