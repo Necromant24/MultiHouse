@@ -160,11 +160,15 @@ namespace MultiHouse.Controllers
         public IActionResult Create([FromForm]HouseRequest houseRequest)
         {
 
-            if (houseRequest.EmailAddress != null && houseRequest.EmailAddress != "")
+            if (houseRequest.EmailAddress != null && houseRequest.EmailAddress != "" && houseRequest.EmailAddress != " ")
             {
-                SendMail("smtp.gmail.com", PersonalData.EmailAddress, PersonalData.EMailPassword, houseRequest.EmailAddress,
-                    "Уведомление об успешной подачи заявки в сервисе MultiHouse",
-                    "Благодарим за обращение, с вами свяжутся в ближайшее время", null);
+                if (houseRequest.EmailAddress.Contains('@')&& houseRequest.EmailAddress.Contains('.'))
+                {
+                    SendMail("smtp.gmail.com", PersonalData.EmailAddress, PersonalData.EMailPassword, houseRequest.EmailAddress,
+                        "Уведомление об успешной подачи заявки в сервисе MultiHouse",
+                        "Благодарим за обращение, с вами свяжутся в ближайшее время", null);
+                }
+                
 
             }
             

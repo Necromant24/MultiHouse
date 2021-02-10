@@ -115,15 +115,21 @@
               <e p="imgs" t="Include">
                 <e p="h0.jpg" t="Include" />
                 <e p="h1.jpg" t="Include" />
+                <e p="h10.jpg" t="Include" />
+                <e p="h11.jpg" t="Include" />
                 <e p="h2.jpg" t="Include" />
                 <e p="h3.jpg" t="Include" />
                 <e p="h4.jpg" t="Include" />
                 <e p="h5.jpg" t="Include" />
                 <e p="h6.jpg" t="Include" />
+                <e p="h7.jpg" t="Include" />
+                <e p="h8.jpg" t="Include" />
+                <e p="h9.jpg" t="Include" />
               </e>
               <e p="mainImg" t="Include">
                 <e p="house0.jpg" t="Include" />
                 <e p="house1.jpg" t="Include" />
+                <e p="house2.jpg" t="Include" />
               </e>
             </e>
             <e p="logoMH.png" t="Include" />
