@@ -51,6 +51,23 @@ namespace MultiHouse.Controllers
         {
             var houses = _context.Houses2.Select(x => x);
 
+
+
+            if (houseSearch.MinCost != null && houseSearch.MinCost>0)
+            {
+                houses = houses.Where(x => x.Cost >= houseSearch.MinCost);
+            }
+            
+            if (houseSearch.MaxCost != null && houseSearch.MaxCost>0)
+            {
+                houses = houses.Where(x => x.Cost <= houseSearch.MaxCost);
+            }
+            
+            if (houseSearch.Metro != null && houseSearch.Metro != "" && houseSearch.Metro != " " && DataHelper.MetroList.Contains(houseSearch.Metro))
+            {
+                houses = houses.Where(x => x.Metro == houseSearch.Metro);
+            }
+
             
             // if (houseSearch.Search != null)
             // {

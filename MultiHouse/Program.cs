@@ -22,6 +22,11 @@ namespace MultiHouse
     {
         public static void Main(string[] args)
         {
+            
+            DataHelper.initMetroList();
+            
+            
+            
 
             var tsk = Task.Run(DataHelper.StartBackupService);
             
