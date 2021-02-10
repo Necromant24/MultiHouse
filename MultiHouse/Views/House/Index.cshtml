@@ -25,14 +25,28 @@
                 <input name="Search" class="form-control min-inp-width" placeholder="поиск..." type="text"/>
                 
               </div>
-              
-              <div class="input-group">
+              <br/>
+              <div class="input-group col-6" style="min-width: 330px">
                 <span class="input-group-text">Цена:</span>
                 <input name="MinCost" type="text"  class="form-control" placeholder="От..." />
                 <input name="MaxCost" type="text"  class="form-control" placeholder="До..." />
               </div>
               
               
+              <div class="col-2 min-inp-width" style="min-width: 200px">
+                <span class="min-inp-width">метро:</span>
+                <input name="Metro" list="metro" class="form-control" type="text" placeholder="метро.."/>
+                              
+                <datalist id="metro">
+                  
+                  @foreach (var metro in (List<string>) ViewData["metroList"])
+                  {
+                    <option>@metro</option>
+                  }
+                                
+                </datalist>
+              
+              </div>
               
               
 

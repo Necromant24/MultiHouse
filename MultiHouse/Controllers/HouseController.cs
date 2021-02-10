@@ -155,6 +155,8 @@ namespace MultiHouse.Controllers
             
             
             ViewData["layout"] = selectLayout(HttpContext);
+
+            ViewData["metroList"] = DataHelper.MetroList;
             
             return View(houseList);
         }
@@ -167,6 +169,9 @@ namespace MultiHouse.Controllers
             {
                 return Redirect("/Admin");
             }
+
+
+            ViewData["metroList"] = DataHelper.MetroList;
             
             
             return View();
@@ -268,6 +273,8 @@ namespace MultiHouse.Controllers
             ++mainImgPostfix;
             
             DataHelper.SavePosfixes((int)mainImgPostfix,(int)imgPostfix);
+            
+            ViewData["metroList"] = DataHelper.MetroList;
 
             return Redirect("/House/Create");
         }

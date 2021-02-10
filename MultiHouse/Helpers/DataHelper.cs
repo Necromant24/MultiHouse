@@ -225,7 +225,11 @@ namespace MultiHouse.Helpers
                 IsBuying = houseUpload.IsBuying,
                 IsRenting = houseUpload.IsRenting,
                 MainImg = houseUpload.MainImg.Name,
-                RoomCount = houseUpload.RoomCount
+                RoomCount = houseUpload.RoomCount,
+                
+                Cost = houseUpload.Cost,
+                Metro = houseUpload.Metro,
+                MetroDistance = houseUpload.MetroDistance
             };
         }
 

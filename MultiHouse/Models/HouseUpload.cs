@@ -12,6 +12,12 @@ namespace MultiHouse.Models
         // заставка на иконке в списке на главной
         public IFormFile MainImg { get; set; }
 
-        public IFormFile[] Images { get; set; } = new IFormFile[0];
+        public IFormFile[] Images { get; set; }
+        
+        // new fields
+        
+        public int Cost { get; set; }
+        public string Metro { get; set; }
+        public int MetroDistance { get; set; }
     }
 }

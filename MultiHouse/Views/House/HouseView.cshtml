@@ -15,70 +15,91 @@
     <div id="houseview">
         <div class="container box-shadow card" style="margin: 20px">
         
-                <div class="row">
+            <div class="row">
         
         
-                    @if (@Model.Images.Count > 0)
-                    {
-                        <div class="carousel-container">
+                @if (@Model.Images.Count > 0)
+                {
+                    <div class="carousel-container">
         
-                            <!-- Bootstrap 4 -->
-                            <div id="carousel" class="carousel slide" data-ride="carousel">
-                                <div class="carousel-inner" style="width: 520px; overflow: hidden;">
+                        <!-- Bootstrap 4 -->
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" style="width: 520px; overflow: hidden;">
         
-                                    @{
-                                        bool first = true;
-                                    }
+                                @{
+                                    bool first = true;
+                                }
         
-                                    @foreach (var imgName in @Model.Images.Select(x => x.Name))
+                                @foreach (var imgName in @Model.Images.Select(x => x.Name))
+                                {
+                                    if (@first)
                                     {
-                                        if (@first)
-                                        {
-                                            <div style="width: 510px; height: 300px;" class="carousel-item active ">
-                                                <img style="width: 500px; height: 275px;" class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
-                                            </div>
-                                            first = false;
-                                        }
-                                        else
-                                        {
-                                            <div style="width: 510px; height: 300px;" class="carousel-item" style="width: 100%">
-                                                <img style="width: 500px; height: 275px;" class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
-                                            </div>
-                                        }
-        
+                                        <div style="width: 510px; height: 300px;" class="carousel-item active ">
+                                            <img style="width: 500px; height: 275px;" class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
+                                        </div>
+                                        first = false;
+                                    }
+                                    else
+                                    {
+                                        <div style="width: 510px; height: 300px;" class="carousel-item" style="width: 100%">
+                                            <img style="width: 500px; height: 275px;" class="img-fluid carousel-img" src="/img/houses/imgs/@imgName" alt="...">
+                                        </div>
                                     }
         
+                                }
         
-                                </div>
-                                <!-- Элементы управления -->
-                                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Предыдущий</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Следующий</span>
-                                </a>
+        
                             </div>
-        
+                            <!-- Элементы управления -->
+                            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Предыдущий</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Следующий</span>
+                            </a>
                         </div>
-                    }
-                </div>
+        
+                    </div>
+                }
+            </div>
+            
+            
             
         
-                <div class="row">
+            <div class="row">
                     <h4>
                         Адрес: @Model.Address
                     </h4>
                 </div>
-                <div class="row">
-                    <h4>
-                        Количество комнат: @Model.RoomCount
-                    </h4>
+            <div class="row">
+                <h4>
+                    Количество комнат: @Model.RoomCount
+                </h4>
         
-                </div>
-        
+            </div>
+            
+            <div class="row">
                 @{
+                    var metro = Model.Metro + " " + Model.MetroDistance + "m";
+                }
+                <h5>
+                    Метро: @metro
+                </h5>
+
+            </div>
+            
+            <div class="row">
+                <h4>
+                    Цена: @Model.Cost/мес.
+                </h4>
+                    
+            </div>
+            
+            
+        
+            @{
                     string rent = "нет";
                     string buy = "нет";
                     if (@Model.IsRenting == "on")
@@ -307,7 +328,7 @@
                             @* </div> *@
                 
                 
-                            <div class="col-sm-6">
+                            <div class="col-sm-6" style="min-width: 220px">
                               <label for="lastName" class="form-label">Номер телефона</label>
                               <input  required name="Phone" type="text" class="form-control" id="lastName" placeholder="8 800 555 35 35" value="">
                               <div class="invalid-feedback">
