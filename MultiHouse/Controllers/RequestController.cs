@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MultiHouse.Database;
+using MultiHouse.Helpers;
 using MultiHouse.Models;
 
 namespace MultiHouse.Controllers
@@ -179,8 +180,8 @@ namespace MultiHouse.Controllers
             {
                 ViewData["status"] = "заявка принята, с вами свяжутся позднее";
             }
-            
-            
+
+            ViewData["metroList"] = DataHelper.MetroList;
             
             return View(new HouseRequest());
         }
@@ -199,6 +200,9 @@ namespace MultiHouse.Controllers
                     HouseId = house.Id
                 };
             }
+            
+            ViewData["metroList"] = DataHelper.MetroList;
+
             
             return View("Create", houseRequest);
         }

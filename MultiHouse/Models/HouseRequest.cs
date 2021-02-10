@@ -31,7 +31,13 @@ namespace MultiHouse.Models
         
         // TODO: add this
         // public DateTime Date{get;set}
+        
+        // new fields
+        
+        public DateTime Date { get; set; } = DateTime.Now;
 
+        public int MaxCost { get; set; }
+        public string Metro { get; set; }
 
     }
 }
