@@ -133,6 +133,11 @@ namespace MultiHouse.Controllers
             {
                 var keyWords = houseSearch.Search.Split(' ');
 
+                if (keyWords.Length > 10)
+                {
+                    keyWords = keyWords[..10];
+                }
+
                 foreach (var word in keyWords)
                 {
                     houseList.AddRange( houses.Where(x => x.Address.Contains(word) ||

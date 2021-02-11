@@ -7,9 +7,23 @@
     <list default="true" id="879e849a-5700-4f0b-bbc0-bc6ff3f47341" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MultiHouse/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/Views/House/HouseView.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/Views/House/HouseView.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MultiHouse/wwwroot/database/postfixes.json" beforeDir="false" afterPath="$PROJECT_DIR$/MultiHouse/wwwroot/database/postfixes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Publish.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/MultiHouse.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/MultiHouse.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/database/mh.db" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/database/mh.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/database/postfixes.json" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/database/postfixes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/img/houses/imgs/h3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/img/houses/imgs/h3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/img/houses/imgs/h4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/img/houses/imgs/h4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/img/houses/imgs/h5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/img/houses/imgs/h5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Publish/wwwroot/img/houses/mainImg/house1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Publish/wwwroot/img/houses/mainImg/house1.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +81,6 @@
       <option value="$PROJECT_DIR$/MultiHouse/wwwroot/css/houseView.css" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/Index4.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Main/House.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Panel.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Controllers/MainController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/PasswordData.cs" />
@@ -106,14 +119,15 @@
       <option value="$PROJECT_DIR$/MultiHouse/Program.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseUpload.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
-      <option value="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/Create.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Models/HouseRequest.cs" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/Create.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/Request/RequestView.cshtml" />
-      <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Controllers/HouseController.cs" />
+      <option value="$PROJECT_DIR$/MultiHouse/Views/Admin/Index.cshtml" />
       <option value="$PROJECT_DIR$/MultiHouse/Views/House/HouseView.cshtml" />
+      <option value="$PROJECT_DIR$/MultiHouse/Controllers/RequestController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mcV2qgifkYzYdOtf8wlSQaiEFu" />
@@ -135,7 +149,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.MultiHouse">
+  <component name="RunManager" selected="Publish to folder.Publish MultiHouse to folder (4)">
     <configuration name="Publish MultiHouse to folder (2)" type="DotNetFolderPublish" factoryName="Publish to folder" temporary="true">
       <riderPublish target_folder="$PROJECT_DIR$/Publish" target_framework="net5.0" uuid_high="8825780245635941667" uuid_low="-4705831587398338530" />
       <method v="2" />
@@ -244,7 +258,10 @@
       <workItem from="1612688544081" duration="1757000" />
       <workItem from="1612815441865" duration="1415000" />
       <workItem from="1612854715473" duration="13604000" />
-      <workItem from="1612958212321" duration="6510000" />
+      <workItem from="1612958212321" duration="6997000" />
+      <workItem from="1612980313004" duration="3415000" />
+      <workItem from="1613055390785" duration="863000" />
+      <workItem from="1613066560650" duration="685000" />
     </task>
     <servers />
   </component>
@@ -334,19 +351,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/MultiHouse/Helpers/DataHelper.cs</url>
-          <line>105</line>
-          <properties documentPath="C:\Users\Necromant\RiderProjects\MultiHouse\MultiHouse\Helpers\DataHelper.cs" initialLine="105" containingFunctionPresentation="method 'initMetroList'">
-            <startOffsets>
-              <option value="2516" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2575" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

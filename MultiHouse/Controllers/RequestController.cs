@@ -160,13 +160,26 @@ namespace MultiHouse.Controllers
         public IActionResult Create([FromForm]HouseRequest houseRequest)
         {
 
+            bool emailError = false;
+
             if (houseRequest.EmailAddress != null && houseRequest.EmailAddress != "" && houseRequest.EmailAddress != " ")
             {
                 if (houseRequest.EmailAddress.Contains('@')&& houseRequest.EmailAddress.Contains('.'))
                 {
-                    SendMail("smtp.gmail.com", PersonalData.EmailAddress, PersonalData.EMailPassword, houseRequest.EmailAddress,
-                        "Уведомление об успешной подачи заявки в сервисе MultiHouse",
-                        "Благодарим за обращение, с вами свяжутся в ближайшее время", null);
+                    try
+                    {
+                        SendMail("smtp.gmail.com", PersonalData.EmailAddress, PersonalData.EMailPassword, houseRequest.EmailAddress,
+                            "Уведомление об успешной подачи заявки в сервисе MultiHouse",
+                            "Благодарим за обращение, с вами свяжутся в ближайшее время", null);
+
+                    }
+                    catch (Exception e)
+                    {
+                        houseRequest.EmailAddress += " - уведомление не отправлено";
+                        emailError = true;
+                    }
+                    
+                    
                 }
                 
 
@@ -176,7 +189,7 @@ namespace MultiHouse.Controllers
             _context.HousesRequests.Add(houseRequest);
             _context.SaveChanges();
             
-            if (houseRequest.EmailAddress!=null && houseRequest.EmailAddress!="")
+            if (houseRequest.EmailAddress!=null && houseRequest.EmailAddress!=""&&!emailError)
             {
                 ViewData["status"] = "заявка принята, проверьте почту";
             }

@@ -82,7 +82,25 @@
             
             <div class="row">
                 @{
-                    var metro = Model.Metro + " " + Model.MetroDistance + "m";
+                    string metro = "";
+
+                    if (Model.Metro != null)
+                    {
+                        metro += Model.Metro+" ";
+                        if (Model.MetroDistance != 0 && Model.MetroDistance != null)
+                        {
+                            metro += Model.MetroDistance+"m";
+                        }
+                    }
+                    else
+                    {
+                        metro = "рядом нет";
+                    }
+                    
+                    
+                    
+                    
+                    
                 }
                 <h5>
                     Метро: @metro
@@ -92,7 +110,20 @@
             
             <div class="row">
                 <h4>
-                    Цена: @Model.Cost/мес.
+                    
+                    @{
+                        var cost = "";
+                    }
+                    @if (@Model.Cost != null && Model.Cost > 0)
+                    {
+                        cost = "Цена:" + Model.Cost + "/мес.";
+                    }
+                    else
+                    {
+                        cost = "Цена: не указано";
+                    }
+                    @cost
+                    
                 </h4>
                     
             </div>

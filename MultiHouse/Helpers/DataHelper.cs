@@ -102,9 +102,7 @@ namespace MultiHouse.Helpers
 
         public static void initMetroList()
         {
-            Console.WriteLine(mlist);
             MetroList = mlist.Split('\n').Select(x=>x.Trim()).ToList();
-            var d = 7;
         }
         
         
