@@ -118,6 +118,7 @@
                 <e p="h10.jpg" t="Include" />
                 <e p="h11.jpg" t="Include" />
                 <e p="h12.jpg" t="Include" />
+                <e p="h13.jpg" t="Include" />
                 <e p="h2.jpg" t="Include" />
                 <e p="h3.jpg" t="Include" />
                 <e p="h4.jpg" t="Include" />
@@ -132,6 +133,7 @@
                 <e p="house1.jpg" t="Include" />
                 <e p="house2.jpg" t="Include" />
                 <e p="house3.jpg" t="Include" />
+                <e p="house4.jpg" t="Include" />
               </e>
             </e>
             <e p="logoMH.png" t="Include" />
@@ -139,6 +141,7 @@
             <e p="logoza.ru.png" t="Include" />
             <e p="MHlogo.png" t="Include" />
             <e p="nophoto.jpg" t="Include" />
+            <e p="right-arrow.svg" t="Include" />
           </e>
           <e p="js" t="Include">
             <e p="site.js" t="Include" />

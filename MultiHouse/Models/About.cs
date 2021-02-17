@@ -23,15 +23,20 @@ namespace MultiHouse.Models
 
         public void Save()
         {
-            if (Images.Length != 3)
+            
+
+            if (Images != null)
             {
-                throw new Exception("img count must be 3");
+                if (Images.Length == 3)
+                {
+                    DataHelper.SaveWebImage("wwwroot/img/About/img1.jpg",Images[0]);
+                    DataHelper.SaveWebImage("wwwroot/img/About/img2.jpg",Images[1]);
+                    DataHelper.SaveWebImage("wwwroot/img/About/img3.jpg",Images[2]);
+                }
+                
             }
             
             
-            DataHelper.SaveWebImage("wwwroot/img/About/img1.jpg",Images[0]);
-            DataHelper.SaveWebImage("wwwroot/img/About/img2.jpg",Images[1]);
-            DataHelper.SaveWebImage("wwwroot/img/About/img3.jpg",Images[2]);
 
             // ++LabelPostfix1;
             // ++LabelPostfix2;

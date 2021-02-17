@@ -11,11 +11,15 @@
     </h3>
     
     <form enctype="multipart/form-data" method="post" action="/House/HouseUpload">
-        <input name="description" placeholder="description" />
-        <input name="RoomCount" type="number" placeholder="RoomCount"  />
-        <input name="Address" placeholder="Address"  />
-        <input name="Cost" type="number" placeholder="Цена/мес." />
-        <input name="Metro" placeholder="ближайшая ст м" list="metroList" />
+        
+        <div>
+            <input name="RoomCount" type="number" placeholder="RoomCount"  />
+            <input name="Address" placeholder="Address"  />
+            <input name="Cost" type="number" placeholder="Цена/мес." />
+            <input name="Metro" placeholder="ближайшая ст м" list="metroList" />
+            <input name="MetroDistance" placeholder="расстояние до метро" type="number" />
+        </div>
+        
         
         <datalist id="metroList">
             @foreach (var metro in (List<string>) ViewData["metroList"])
@@ -25,13 +29,26 @@
         </datalist>
         
         
-        <input name="MetroDistance" placeholder="расстояние до метро" type="number" />
+        <div>
+            <input name="MainImg" type="file" />
+            <input type="file" multiple="multiple" name="Images">
+            
+        </div>
         
         @* Is Rent <input name="IsRenting" type="checkbox" /> *@
         @* Is Buy <input name="IsBuying" type="checkbox" /> *@
-        <input name="MainImg" type="file" />
-        <input type="file" multiple="multiple" name="Images">
-        <input type="submit" value="create" />
+        
+        
+        <br>
+        <div>
+            
+            <textarea name="description" placeholder="description" style="min-width: 600px;" ></textarea>
+        </div>
+        
+        <div>
+            
+            <input type="submit" value="create" />
+        </div>
         
     </form>
     

@@ -316,7 +316,7 @@ namespace MultiHouse.Controllers
 
             fs.Close();
             
-            img.Mutate(x => x.Resize(252*2, 138*2));
+            img.Mutate(x => x.Resize(252*2*2, 138*2*2));
             
             img.Save(savePath+name);
         }
