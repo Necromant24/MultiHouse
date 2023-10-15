@@ -51,30 +51,10 @@ namespace MultiHouse.Controllers
         {
             var houses = _context.Houses2.Select(x => x);
 
-            
-            // if (houseSearch.Search != null)
-            // {
-            //     var keyWords = houseSearch.Search.Split(' ');
-            //     foreach (var word in keyWords)
-            //     {
-            //         if (word != "" && word != " ")
-            //         {
-            //             houses = houses.Concat(houses.Where(x=>x.Address.Contains(word) ||
-            //                                           x.Description.Contains(word)));
-            //         }
-            //         
-            //     }
-            // }
 
-            // if (houseSearch.Search != null)
-            // {
-            //     houses = houses.Where(x => x.Address.Contains(houseSearch.Search) ||
-            //                                x.Description.Contains(houseSearch.Search));
-            // }
 
             if (houseSearch.RoomCount != null && houseSearch.RoomCount!="")
             {
-                //houses = houses.Where(x => x.RoomCount == houseSearch.RoomCount);
 
                 int rcount = 0;
                 bool isNum = int.TryParse(((string?)houseSearch.RoomCount),out rcount);
@@ -208,9 +188,6 @@ namespace MultiHouse.Controllers
         
         
 
-        
-        
-
 
         public IActionResult HouseUpload([FromForm]HouseUpload houseUpload)
         {
@@ -257,15 +234,6 @@ namespace MultiHouse.Controllers
 
 
 
-        
-        
-        
-        
-        
-        
-        
-
-
 
         public void SaveWebImage(IFormFile file, string name, bool isMain = false)
         {
@@ -281,7 +249,6 @@ namespace MultiHouse.Controllers
             
             var fs = file.OpenReadStream();
 
-            //IImageDecoder decoder = new JpegDecoder();
 
             Image img = Image.Load(fs);
 
